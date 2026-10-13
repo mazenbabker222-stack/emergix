@@ -1,0 +1,493 @@
+{
+  "slug": "subarachnoid-haemorrhage",
+  "title": "Subarachnoid haemorrhage",
+  "specialty": "neurology",
+  "topicGroup": "Stroke and vascular",
+  "summary": "Explore a sudden severe headache and examiner expectations.",
+  "image": "/brand/t2.jpg",
+  "difficulty": "core",
+  "timing": {
+    "readingSeconds": 60,
+    "historySeconds": 480,
+    "examinerSeconds": 120
+  },
+  "totalMarks": 20,
+  "domains": [
+    {
+      "domain": "Introduction, consent and ID check",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Open question and prompt",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Onset, timing and course",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Focused symptom screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Red flags and risk screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "PMH, drugs, allergies, family, social",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Ideas, concerns, expectations",
+      "maxMarks": 1,
+      "descriptor": ""
+    },
+    {
+      "domain": "Summary and plan",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Communication and empathy",
+      "maxMarks": 2,
+      "descriptor": ""
+    }
+  ],
+  "content": {
+    "aim": [
+      {
+        "t": "p",
+        "text": "Assess history taking in a sudden severe headache, recognising subarachnoid haemorrhage through the time-critical, red-flag approach."
+      }
+    ],
+    "candidateInstructions": [
+      {
+        "t": "p",
+        "text": "You are the emergency doctor. Ms Sarah Khan, 38, has come in with a sudden severe headache. Observations: BP 158/94, HR 96, temperature 36.9, GCS 15. Take a focused history. <b>Do not examine.</b> At the end, summarise and state your initial plan."
+      }
+    ],
+    "actorBriefs": [
+      {
+        "title": "Actor brief",
+        "blocks": [
+          {
+            "t": "ul",
+            "items": [
+              "Onset 14:10 at the gym: sudden, at its worst within a minute, worst headache of her life, back of the head.",
+              "Vomited twice, neck stiff and sore, light hurts. Felt woozy, no clear blackout, no fit.",
+              "No head injury, fever or rash. No weakness, speech or vision change.",
+              "No similar headaches before; occasional mild migraine.",
+              "High blood pressure on ramipril. Smokes 15 a day. No blood thinners, no cocaine, no allergies.",
+              "Mother died suddenly at 52 (\"something in her head\"); an uncle had polycystic kidney disease.",
+              "Concern if asked: \"Is it a bleed like my mum? Am I going to die?\""
+            ]
+          }
+        ]
+      }
+    ],
+    "modelInteraction": [
+      {
+        "title": "Introduction and open question",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Sarah Khan, 3rd May 1988."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Could you tell me what has been happening, in your own words?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I was at the gym and got a sudden terrible headache at the back of my head. It is the worst I have ever had."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. Is there anything else you have noticed?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I have been sick twice, my neck is stiff and the light hurts my eyes."
+          }
+        ]
+      },
+      {
+        "title": "Onset and time",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I am going to ask some specific questions now. Exactly what time did it start, and how quickly did it become severe?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "About ten past two. It was at its worst within a minute, like being hit."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Did you black out, have a fit, or feel faint?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I felt woozy but did not black out. No fit."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any head injury, fever or rash?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No, none of those."
+          }
+        ]
+      },
+      {
+        "title": "Neurological and red flags",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any weakness, numbness, speech or vision problems, or double vision?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No, only light bothers me."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Have you had headaches like this before?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Never like this. I get mild migraines sometimes."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Do you take blood thinners, or use cocaine or other drugs?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No to both."
+          }
+        ]
+      },
+      {
+        "title": "Background and family",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Do you have any medical conditions, take regular medicines, or have allergies?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "High blood pressure, ramipril. No allergies."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Does anyone in your family have bleeds in the brain, aneurysms or kidney problems? Do you smoke?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My mum died suddenly at 52, they said something in her head. My uncle had polycystic kidney disease. I smoke fifteen a day."
+          }
+        ]
+      },
+      {
+        "title": "Ideas, concerns and summary",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "What do you think might be going on, and what worries you most?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Is it a bleed like my mum? Am I going to die?"
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "That is an understandable fear. I will be honest: this could be bleeding around the brain, and it needs urgent tests. We are acting quickly. To summarise, you had a sudden severe headache that peaked within a minute at 14:10, with vomiting, a stiff neck and light sensitivity, you have high blood pressure and smoke, and your mother died suddenly. I am arranging an urgent CT scan of your head, bloods and a heart tracing, and I will speak to the senior doctor and the neurosurgical team. Any questions?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No. Thank you."
+          }
+        ]
+      }
+    ],
+    "examinerExpectations": [
+      {
+        "t": "table",
+        "head": [
+          "Task",
+          "Expected in this station"
+        ],
+        "rows": [
+          [
+            "Do",
+            "Introduce yourself, check name and date of birth, start with an open question, listen, signpost, summarise and state a plan."
+          ],
+          [
+            "Find",
+            "Thunderclap headache peaking within a minute at 14:10 on exertion, vomiting, neck stiffness, photophobia, brief wooziness, hypertension, smoker, family history of sudden death and polycystic kidney disease, no blood thinners."
+          ],
+          [
+            "Ask",
+            "Exact onset time and speed, collapse, fit, head injury, fever, rash, neurological symptoms, previous headaches, blood thinners, cocaine, hypertension, smoking, family history."
+          ],
+          [
+            "Manage",
+            "Say aloud: ABCDE, glucose, urgent CT head, bloods, ECG, neurological observations, analgesia and antiemetic, senior and neurosurgical discussion, lumbar puncture or CT angiography per pathway if CT negative."
+          ],
+          [
+            "React",
+            "Acknowledge fear, stay calm, do not falsely reassure, say you would ask the senior when unsure."
+          ]
+        ]
+      }
+    ],
+    "ifThisHappens": [
+      {
+        "t": "table",
+        "head": [
+          "Situation",
+          "Good response"
+        ],
+        "rows": [
+          [
+            "Patient becomes drowsy",
+            "Recheck ABCDE and GCS, call the senior and critical care, repeat glucose, tell the neurosurgical team."
+          ],
+          [
+            "Patient vomits and has a fit",
+            "Protect the airway, call for help, follow the seizure protocol, arrange urgent CT."
+          ],
+          [
+            "Patient is frightened of dying",
+            "Acknowledge the fear, be honest, explain what happens next."
+          ]
+        ]
+      }
+    ],
+    "plainLanguage": [
+      {
+        "t": "table",
+        "head": [
+          "Medical term",
+          "Say instead"
+        ],
+        "rows": [
+          [
+            "Subarachnoid haemorrhage",
+            "Bleeding in the space around the brain"
+          ],
+          [
+            "Aneurysm",
+            "A weak, ballooned part of a blood vessel"
+          ],
+          [
+            "Thunderclap headache",
+            "A sudden, extremely severe headache"
+          ],
+          [
+            "Photophobia",
+            "Light hurting the eyes"
+          ],
+          [
+            "CT scan",
+            "A quick scan that takes pictures of the brain"
+          ],
+          [
+            "Lumbar puncture",
+            "A needle test in the lower back to take fluid"
+          ]
+        ]
+      }
+    ],
+    "patientQuestions": [
+      {
+        "t": "table",
+        "head": [
+          "Question",
+          "Model reply"
+        ],
+        "rows": [
+          [
+            "Is it a bleed?",
+            "\"It could be. The scan will show us quickly.\""
+          ],
+          [
+            "Am I going to die?",
+            "\"This can be serious, and we are acting fast, which gives you the best chance.\""
+          ],
+          [
+            "Do I need surgery?",
+            "\"If it is a bleed from a weak vessel, a specialist team may treat it with a procedure or an operation.\""
+          ],
+          [
+            "Could my family be affected?",
+            "\"Some causes run in families. The specialist team will advise you later.\""
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance."
+      }
+    ],
+    "examinerQuestions": [
+      {
+        "question": "What are your immediate actions and investigations?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "ABCDE, glucose, IV access, bloods, ECG, regular GCS and neurological observations.",
+              "Urgent non-contrast CT head, most sensitive within 6 hours of onset.",
+              "If CT is negative and more than 6 hours from onset, follow the local pathway: lumbar puncture (at least 12 hours after onset, for xanthochromia) or CT angiography.",
+              "Early senior and neurosurgical discussion, analgesia and antiemetic, nil by mouth."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What are the causes and risk factors?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Ruptured berry aneurysm is the commonest cause.",
+              "Risk factors: smoking, hypertension, family history, polycystic kidney disease, heavy alcohol, cocaine.",
+              "Other causes: arteriovenous malformation, trauma."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Which headache features are red flags?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Thunderclap onset, exertional onset, neck stiffness, vomiting, collapse or seizure.",
+              "Focal neurology, reduced GCS, fever with rash, new headache over 50, papilloedema."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What are the main complications and treatments?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Rebleeding, hydrocephalus, vasospasm with delayed ischaemia, seizures, hyponatraemia.",
+              "Nimodipine for confirmed SAH, BP control as advised by neurosurgery, and aneurysm securing by coiling or clipping."
+            ]
+          }
+        ]
+      }
+    ],
+    "examinerQuestionPrompts": [
+      {
+        "t": "ol",
+        "items": [
+          "What are your immediate actions and investigations?",
+          "What are the causes and risk factors?",
+          "Which headache features are red flags?",
+          "What are the main complications and treatments?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Model answers are in Learning mode.",
+        "muted": true
+      }
+    ],
+    "examinerAnswerTips": [],
+    "redFlags": [
+      {
+        "t": "ul",
+        "items": [
+          "Not asking exactly when and how fast it began.",
+          "Calling it migraine without excluding red flags.",
+          "No CT, or no senior and neurosurgical escalation.",
+          "No summary or plan, or jargon without explanation."
+        ]
+      }
+    ],
+    "globalRatingGuide": [],
+    "commonErrors": [],
+    "teachingPoints": [
+      {
+        "t": "ul",
+        "items": [
+          "Ask exactly how fast the headache peaked.",
+          "Thunderclap onset is subarachnoid haemorrhage until proven otherwise.",
+          "CT head is most sensitive early, so time matters.",
+          "Do not label migraine without excluding red flags."
+        ]
+      }
+    ],
+    "resources": []
+  }
+}

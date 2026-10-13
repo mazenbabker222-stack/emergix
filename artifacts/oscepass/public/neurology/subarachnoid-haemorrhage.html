@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subarachnoid haemorrhage: MRCEM OSCE station</title>
+<style>
+:root{--bg:#f6f8f9;--card:#fff;--ink:#1b2a33;--mute:#5b6b75;--line:#d5dde2;--acc:#17566e;--soft:#e6f0f4;--alert:#b42318;--alertbg:#fdecea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10181d;--card:#18232a;--ink:#e6edf1;--mute:#9fb0ba;--line:#2c3b45;--acc:#7cc4de;--soft:#1d3039;--alert:#ff8a7a;--alertbg:#3a1f1c}}
+:root[data-theme="dark"]{--bg:#10181d;--card:#18232a;--ink:#e6edf1;--mute:#9fb0ba;--line:#2c3b45;--acc:#7cc4de;--soft:#1d3039;--alert:#ff8a7a;--alertbg:#3a1f1c}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font:700 1.65rem/1.2 Georgia,"Iowan Old Style",serif;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 14px;font-size:.92rem}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.meta span{background:var(--soft);color:var(--acc);border-radius:999px;padding:3px 12px;font-size:.85rem}
+.bar{display:flex;gap:8px;margin:0 0 14px}
+button{font:inherit;font-size:.9rem;background:var(--card);color:var(--acc);border:1px solid var(--acc);border-radius:8px;padding:6px 14px;cursor:pointer}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 10px}
+details details{background:var(--bg);margin:8px 0 0}
+summary{cursor:pointer;list-style:none;padding:14px 44px 14px 16px;font-weight:650;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:18px;top:50%;width:8px;height:8px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+details[open]>summary::after{transform:translateY(-30%) rotate(225deg)}
+details[open]>summary{border-bottom:1px solid var(--line)}
+.b{padding:12px 16px 16px}
+.b p{margin:.5em 0}
+.b ul,.b ol{margin:.4em 0;padding-left:1.25em}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:420px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.lm{background:var(--alertbg);color:var(--alert);border-radius:8px;padding:8px 12px;margin:10px 0;font-size:.92rem}
+.d{padding:2px 0 2px 10px;border-left:3px solid var(--line);margin:.35em 0}
+.d.dr{border-color:var(--acc)}
+.d.w{border-color:var(--alert)}
+.d b{font-weight:650}
+.d.dr b{color:var(--acc)}
+h3{font-size:1rem;margin:14px 0 4px}
+.foot{color:var(--mute);font-size:.82rem;margin-top:18px}
+h2{font:700 1.25rem/1.25 Georgia,"Iowan Old Style",serif;margin:22px 0 8px}
+a{color:var(--acc)}
+.seg{display:flex;margin:0 0 14px}
+.seg button{flex:1;border-radius:0}
+.seg button:first-child{border-radius:8px 0 0 8px}
+.seg button:last-child{border-radius:0 8px 8px 0;border-left:0}
+.seg button[aria-pressed=true]{background:var(--acc);color:var(--bg)}
+.exam{display:none}
+.ev{display:none}
+.exam[data-view=examiner] .ev{display:block}
+.exam[data-view=examiner] .cv{display:none}
+[data-mode=exam] .exam{display:block}
+[data-mode=exam] .learn{display:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 10px;text-align:center}
+.card .bar{justify-content:center;margin:0}
+.timer{font:700 3rem/1.1 ui-monospace,Menlo,Consolas,monospace;margin:6px 0}
+.timer.warn{color:var(--alert)}
+.tp{margin:0 0 10px;color:var(--mute)}
+select{font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 6px}
+.tot{font-weight:700;font-size:1.1rem;margin:10px 0}
+@media (prefers-reduced-motion:reduce){summary::after{transition:none}}
+</style>
+</head>
+<body data-mode="learn">
+<main>
+<h1>Subarachnoid haemorrhage</h1>
+<p class="sub">MRCEM neurology OSCE station for emergency medicine. Tap a title to open it.</p>
+
+<div class="seg" role="group" aria-label="Mode"><button type="button" id="m1" aria-pressed="true">Learning mode</button><button type="button" id="m2" aria-pressed="false">Exam mode</button></div>
+<div class="bar learn"><button type="button" id="ex">Expand all</button><button type="button" id="co">Collapse all</button></div>
+<div class="st" id="s1"><h2 id="stroke">Stroke and TIA: OSCE station</h2>
+<div class="meta"><span>Emergency medicine</span><span>8 min history</span><span>2 min examiner questions</span><span>20 marks</span></div>
+
+
+
+<details class="learn" open><summary>Aim and learning outcomes</summary><div class="b">
+<p>Assess focused, patient-centred history taking in a time-critical presentation of suspected stroke, including collateral history from a relative.</p>
+<p>The candidate should:</p>
+<ul><li>Open with an open question, then move to closed questions.</li><li>Establish the <b>time last known well</b> from a witness, early.</li><li>Cover stroke symptoms and consider mimics.</li><li>Screen for thrombolysis and thrombectomy safety (anticoagulants, bleeding, surgery, trauma).</li><li>Establish premorbid function, explore concerns, and summarise with a plan.</li></ul>
+</div></details>
+
+<details><summary>Candidate instructions</summary><div class="b">
+<p>You are the emergency department doctor. Mr David Okafor, 66, has arrived in Resus by ambulance.</p>
+<p>Paramedic handover: glucose 6.8 mmol/L, BP 168/94, HR 92 irregular, SpO2 97% on air, GCS 15.</p>
+<p>Take a focused history from the patient and his wife. <b>Do not examine.</b> At the end, summarise and state your initial plan.</p>
+</div></details>
+
+<section class="exam" data-view="candidate">
+<div class="seg" role="group" aria-label="View"><button type="button" id="v1" aria-pressed="true">Candidate view</button><button type="button" id="v2" aria-pressed="false">Examiner view</button></div>
+<div class="card cv"><p class="sub">Candidate: read the instructions above, then start the timer.</p><div class="timer" id="tm">08:00</div><p class="tp" id="tp">History taking</p><div class="bar"><button type="button" id="ts">Start</button><button type="button" id="tr">Reset</button></div></div>
+<details class="ev" open><summary>Examiner marking sheet</summary><div class="b"><div class="scroll"><table id="mt"></table></div>
+<p class="tot">Total: <span id="tt">0</span> / 20</p>
+<p>Global rating: <select id="gr" aria-label="Global rating"><option>Not rated</option><option>Clear pass</option><option>Pass</option><option>Borderline</option><option>Fail</option></select></p>
+<button type="button" id="rs">Clear marks</button></div></details>
+<details class="ev"><summary>What the examiner expects</summary><div class="b"><div class="scroll"><table><tr><th>Task</th><th>Expected in this station</th></tr><tr><td>Do</td><td>Introduce yourself, check name and date of birth, gain consent, start with an open question, listen without interrupting, signpost, summarise, state a plan.</td></tr><tr><td>Find</td><td>Last well 08:30. Left face droop, left arm and leg weakness, slurred speech, blurred left vision. High blood pressure, diabetes, possible irregular heartbeat (fainting last year). Aspirin only, no blood thinners. Fully independent before.</td></tr><tr><td>Ask</td><td>Collateral from the wife. Headache, vomiting, fit, blackout, chest pain, neck pain. Previous episodes. Bleeding or surgery in 3 months. Allergies, family history, smoking, alcohol, daily function, worries.</td></tr><tr><td>Manage</td><td>Say aloud: check glucose, ABCDE, urgent CT head with CT angiogram, ECG, bloods with clotting, IV access, alert the stroke team, monitor, nothing to eat or drink until a swallow check.</td></tr><tr><td>React</td><td>Acknowledge fear, stay calm, correct mistakes openly, say "I would ask the stroke consultant" when unsure, restate the time if anything changes.</td></tr></table></div></div></details>
+<details class="ev"><summary>If this happens, react like this</summary><div class="b"><div class="scroll"><table><tr><th>Situation</th><th>Good response</th></tr><tr><td>Speech gets worse</td><td>Recheck ABCDE and glucose, tell the stroke team now, note the time.</td></tr><tr><td>Vomiting or a fit</td><td>Protect the airway, call for help, follow the seizure protocol, repeat glucose.</td></tr><tr><td>Wife is tearful</td><td>Pause, acknowledge, offer a seat and a nurse, then carry on.</td></tr><tr><td>Patient cannot answer</td><td>Use the wife and short yes or no questions.</td></tr><tr><td>Time running out</td><td>Go straight to the safety screen and summary.</td></tr><tr><td>Unsure of an examiner question</td><td>Say what you know, name the limit, and say you would ask a senior.</td></tr></table></div></div></details>
+<details class="ev"><summary>Plain-language words to use</summary><div class="b"><div class="scroll"><table><tr><th>Medical term</th><th>Say instead</th></tr><tr><td>Stroke</td><td>A problem with the blood supply to part of the brain</td></tr><tr><td>Clot, infarct</td><td>A blockage in a blood vessel</td></tr><tr><td>Haemorrhage</td><td>Bleeding in the brain</td></tr><tr><td>TIA</td><td>A mini-stroke, a short warning episode</td></tr><tr><td>Dysarthria</td><td>Slurred speech</td></tr><tr><td>Dysphasia</td><td>Trouble finding or understanding words</td></tr><tr><td>Hemiparesis</td><td>Weakness down one side</td></tr><tr><td>Facial droop</td><td>One side of the face drooping</td></tr><tr><td>Atrial fibrillation</td><td>An irregular heartbeat</td></tr><tr><td>Anticoagulant</td><td>Blood thinner</td></tr><tr><td>Hypertension</td><td>High blood pressure</td></tr><tr><td>Syncope</td><td>Fainting</td></tr><tr><td>CT scan</td><td>A quick scan that takes pictures of the brain</td></tr><tr><td>Thrombolysis</td><td>A clot-busting drug through a drip</td></tr><tr><td>Thrombectomy</td><td>Removing the clot through a thin tube in an artery</td></tr><tr><td>Nil by mouth</td><td>Nothing to eat or drink for now</td></tr><tr><td>Stroke mimic</td><td>Something else that can look like a stroke</td></tr></table></div><p>Useful phrases: "last seen completely well", "any weakness or numbness?", "any trouble speaking or understanding?", "any blood thinners?"</p></div></details>
+<details class="ev"><summary>Answering patient and relative questions</summary><div class="b"><div class="scroll"><table><tr><th>Question</th><th>Model reply</th></tr><tr><td>Is it a stroke?</td><td>"It looks likely from what you describe. The scan will confirm it and show us the best treatment."</td></tr><tr><td>Will I get my arm back?</td><td>"I can't promise. The sooner we treat this, the better the chance of recovery, and we are moving as fast as we can."</td></tr><tr><td>Is he going to die?</td><td>"He is stable at the moment and we are acting quickly. I'll keep you updated at every step."</td></tr><tr><td>Why did this happen?</td><td>"High blood pressure, diabetes and an irregular heartbeat can all cause it. Tests will tell us more."</td></tr><tr><td>Is the treatment risky?</td><td>"A small number of people get bleeding in the brain. Without treatment the outlook is usually worse. The stroke team will go through it with you."</td></tr><tr><td>Why can't he eat or drink?</td><td>"Swallowing can be affected, and food could go down the wrong way. We'll check it first."</td></tr><tr><td>Can I drive?</td><td>"Not for now. The stroke team will advise when it is safe, and there are driving rules we'll go through."</td></tr><tr><td>Can I stay with him?</td><td>"Yes, for now. A nurse will look after you and update you."</td></tr></table></div><p>Tips: acknowledge the feeling first, use short sentences, check understanding, never over-promise, avoid false reassurance.</p></div></details>
+<details class="ev" id="ea"></details>
+<details class="ev"><summary>How to answer the examiner</summary><div class="b"><ul><li>Say your priority first: "My immediate priority is..."</li><li>Use a structure (ABCDE, then investigations, then treatment).</li><li>Give times and numbers: 4.5 hours for thrombolysis, last known well, BP under 185/110.</li><li>Link the answer back to this patient.</li><li>If unsure, say what you know and that you would ask the stroke consultant.</li><li>Keep to the time; stop when the examiner moves on.</li></ul></div></details>
+<details class="ev"><summary>Red flags for examiners</summary><div class="b"><ul><li>No last known well time.</li><li>Giving thrombolysis before a CT.</li><li>Skipping glucose or the blood thinner question.</li><li>False reassurance or firm promises.</li><li>Jargon without explanation, or interrupting the patient.</li><li>No summary or plan.</li></ul></div></details>
+<details class="cv" open><summary>Examiner questions (2 minutes)</summary><div class="b"><ol><li>What are your immediate actions and investigations?</li><li>What time windows apply to reperfusion treatment?</li><li>What are the contraindications and cautions for thrombolysis?</li><li>What are the common stroke mimics?</li><li>How would you manage a TIA with fully resolved symptoms?</li></ol><p class="sub">Model answers are in Learning mode.</p></div></details>
+</section>
+<details class="learn"><summary>Actor brief: patient, Mr David Okafor</summary><div class="b">
+<p><b>Manner:</b> calm but frightened, mildly slurred speech.</p>
+<p><b>Only after an open question:</b> "I was having breakfast and my mouth felt strange. I dropped my cup, then my left arm went heavy. My speech feels funny too." After "anything else?": "My vision is a bit blurry on the left."</p>
+<div class="scroll"><table>
+<tr><th>Topic</th><th>Response</th></tr>
+<tr><td>Onset</td><td>Sudden, about 08:40, slowly worsening</td></tr>
+<tr><td>Symptoms</td><td>Left face droop, left arm heavy, left leg a little weak, slurred speech, left blurred vision</td></tr>
+<tr><td>Denies</td><td>Headache, vomiting, double vision, dizziness, seizure, blackout, chest pain, palpitations, neck pain or injury</td></tr>
+<tr><td>Previous episodes</td><td>None</td></tr>
+<tr><td>PMH</td><td>Hypertension, type 2 diabetes. One fainting episode last year, "nothing found"</td></tr>
+<tr><td>Drugs</td><td>Aspirin 75 mg, metformin, amlodipine, atorvastatin. <b>No anticoagulants.</b> No allergies</td></tr>
+<tr><td>Bleeding risk</td><td>No surgery, trauma, bleeding, black stools or dental work in 3 months. No brain bleed or aneurysm</td></tr>
+<tr><td>Family</td><td>Father had a stroke at 70</td></tr>
+<tr><td>Social</td><td>Ex-smoker (10 years), a few beers at weekends. Lives with wife, drives, gardens, fully independent</td></tr>
+<tr><td>Concerns (if asked)</td><td>"I think it's a stroke like my dad." "Will I get my arm back? I don't want to be a burden."</td></tr>
+</table></div>
+</div></details>
+
+<details class="learn"><summary>Actor brief: wife, Mrs Grace Okafor</summary><div class="b">
+<ul><li>Anxious, speaks quickly, stays close to her husband.</li><li>He was <b>completely well at 08:30</b> at breakfast. His face drooped about ten minutes later. She rang 999 at 08:50.</li><li>His speech is "a bit worse" since.</li><li>Mentions last year's fainting episode only if asked about past history.</li><li>If not reassured: "Is he going to die?"</li></ul>
+</div></details>
+
+<details class="learn"><summary>Model history-taking interaction</summary><div class="b">
+
+<details><summary>Part 1. Introduction and consent</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Hello, I'm Dr Shah, one of the emergency doctors. Can you tell me your full name and date of birth?</p>
+<p class="d"><b>Patient:</b> David Okafor, 4th March 1960.</p>
+<p class="d dr"><b>Doctor:</b> Thank you, David. And you are?</p>
+<p class="d w"><b>Wife:</b> Grace, his wife.</p>
+<p class="d dr"><b>Doctor:</b> I'd like to ask about this morning, and then we'll move quickly with tests. Is that alright with you both?</p>
+<p class="d"><b>Patient:</b> Yes, of course.</p>
+</div></details>
+
+<details><summary>Part 2. Open question and active listening</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Could you tell me what has been happening this morning, in your own words?</p>
+<p class="d"><b>Patient:</b> I was having breakfast and my mouth felt strange. I dropped my cup, and then my left arm went heavy. My speech feels funny too.</p>
+<p class="d dr"><b>Doctor:</b> Thank you. Take your time. Is there anything else you've noticed?</p>
+<p class="d"><b>Patient:</b> My vision is a bit blurry on the left side. That's all.</p>
+</div></details>
+
+<details><summary>Part 3. Collateral history and time last known well</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Grace, were you with David when this started? When was he last completely well, with no symptoms at all?</p>
+<p class="d w"><b>Wife:</b> He was normal at 08:30. About ten minutes later his face drooped. I rang 999 at 08:50.</p>
+<p class="lm">Last known well: 08:30. This is the key time for treatment decisions.</p>
+<p class="d dr"><b>Doctor:</b> That's very helpful. Has anything got better or worse since?</p>
+<p class="d w"><b>Wife:</b> His speech is a little worse, I think.</p>
+</div></details>
+
+<details><summary>Part 4. Signpost, then focused closed questions</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> I'm going to ask some specific questions now, so short answers are fine. Any headache?</p>
+<p class="d"><b>Patient:</b> No.</p>
+<p class="d dr"><b>Doctor:</b> Any vomiting, double vision, dizziness or problems with balance?</p>
+<p class="d"><b>Patient:</b> No double vision. No dizziness.</p>
+<p class="d dr"><b>Doctor:</b> Any fit, blackout, chest pain or palpitations?</p>
+<p class="d"><b>Patient:</b> No.</p>
+<p class="d dr"><b>Doctor:</b> Any neck pain, or a recent neck injury or fall?</p>
+<p class="d"><b>Patient:</b> No.</p>
+<p class="d dr"><b>Doctor:</b> Have you ever had anything like this before, even a short episode that passed?</p>
+<p class="d"><b>Patient:</b> Never.</p>
+</div></details>
+
+<details><summary>Part 5. Safety screen for reperfusion treatment</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Which medicines do you take?</p>
+<p class="d"><b>Patient:</b> Aspirin 75, metformin, amlodipine and a statin.</p>
+<p class="d dr"><b>Doctor:</b> Any other blood thinners, such as warfarin, apixaban, rivaroxaban or edoxaban? Any allergies?</p>
+<p class="d"><b>Patient:</b> No blood thinners, only the aspirin. No allergies.</p>
+<p class="d dr"><b>Doctor:</b> In the last three months, any surgery, injuries, falls, bleeding, black stools or dental extractions?</p>
+<p class="d"><b>Patient:</b> None.</p>
+<p class="d dr"><b>Doctor:</b> Have you ever had bleeding in the brain, or been told you have an aneurysm?</p>
+<p class="d"><b>Patient:</b> No.</p>
+</div></details>
+
+<details><summary>Part 6. Background history</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Do you have any medical conditions? Any heart problems, such as an irregular heartbeat?</p>
+<p class="d"><b>Patient:</b> High blood pressure and diabetes. Nothing with my heart that I know of.</p>
+<p class="d w"><b>Wife:</b> He fainted last year. The hospital checked him but found nothing.</p>
+<p class="d dr"><b>Doctor:</b> Thank you, Grace, that's useful. Does anyone in the family have strokes or heart disease? Do you smoke or drink?</p>
+<p class="d"><b>Patient:</b> My father had a stroke at 70. I stopped smoking ten years ago, and I have a few beers at weekends.</p>
+</div></details>
+
+<details><summary>Part 7. Premorbid function and social history</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Before this morning, what could you do for yourself day to day? Who is at home with you?</p>
+<p class="d w"><b>Wife:</b> Everything. He drives, does the gardening, looks after himself completely.</p>
+<p class="d"><b>Patient:</b> Just Grace and me at home.</p>
+</div></details>
+
+<details><summary>Part 8. Ideas, concerns and expectations</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> David, what do you think might be happening? What is worrying you most?</p>
+<p class="d"><b>Patient:</b> I think it might be a stroke, like my dad. Will I get my arm back? I don't want to be a burden.</p>
+<p class="d dr"><b>Doctor:</b> I understand. Grace, is there anything you are worried about?</p>
+<p class="d w"><b>Wife:</b> Is he going to die?</p>
+<p class="d dr"><b>Doctor:</b> I understand why you're frightened. David is stable at the moment, and we are acting quickly, which gives him the best chance. I'll keep you both updated at every step.</p>
+</div></details>
+
+<details><summary>Part 9. Summary and initial plan</summary><div class="b">
+<p class="d dr"><b>Doctor:</b> Let me summarise, and please correct me. David, you've had sudden left-sided weakness, slurred speech and blurry vision on the left, starting about 08:40. You were last completely well at 08:30. You take aspirin but no other blood thinners, you have high blood pressure and diabetes, and you were fully independent before today. Is that right?</p>
+<p class="d"><b>Patient:</b> Yes.</p>
+<p class="d dr"><b>Doctor:</b> This could be a problem with the blood supply to part of the brain, so I'm arranging an urgent CT scan of your head, a heart tracing and blood tests, and the stroke team is being alerted so they can see you straight away. Do you have any questions?</p>
+<p class="d"><b>Patient:</b> No. Thank you, doctor.</p>
+</div></details>
+
+</div></details>
+
+<details class="learn"><summary>Examiner mark scheme (20 marks)</summary><div class="b">
+<div class="scroll"><table>
+<tr><th>Domain</th><th>Expected behaviour</th><th>Marks</th></tr>
+<tr><td>Introduction and consent</td><td>Introduces self and role, confirms name and DOB, asks who the relative is, gains consent</td><td>2</td></tr>
+<tr><td>Open questioning</td><td>Opens with an open question, listens without interrupting, uses a prompt</td><td>2</td></tr>
+<tr><td>Last known well</td><td>Establishes the time early, from the witness</td><td>2</td></tr>
+<tr><td>Signposting</td><td>Signals the move to closed questions</td><td>1</td></tr>
+<tr><td>Symptom screen</td><td>Face, arm, leg, speech, vision, balance, headache, vomiting, seizure, chest pain, neck pain (8 or more = 3; 5 to 7 = 2; 3 to 4 = 1)</td><td>3</td></tr>
+<tr><td>Reperfusion safety screen</td><td>Anticoagulants and antiplatelets, bleeding, surgery, trauma, previous brain bleed (all = 2; some = 1)</td><td>2</td></tr>
+<tr><td>PMH, drugs, allergies, family</td><td>Vascular risk factors, previous TIA or stroke, full drug list, allergies, family history</td><td>2</td></tr>
+<tr><td>Social and function</td><td>Smoking, alcohol, home, baseline function</td><td>1</td></tr>
+<tr><td>Ideas, concerns, expectations</td><td>Explored for patient and relative</td><td>1</td></tr>
+<tr><td>Summary and plan</td><td>Accurate summary, checks it, states urgent CT and stroke team</td><td>2</td></tr>
+<tr><td>Communication and empathy</td><td>Plain language, appropriate pace, acknowledges anxiety</td><td>2</td></tr>
+</table></div>
+<h3>Global rating</h3>
+<ul><li><b>Clear pass:</b> structured, time-critical, all key points.</li><li><b>Pass:</b> most points, minor omissions.</li><li><b>Borderline:</b> key omission (for example no last known well time) or poor communication.</li><li><b>Fail:</b> disorganised, unsafe omissions or unprofessional.</li></ul>
+<h3>Common errors</h3>
+<ul><li>Closed questions only.</li><li>Asking when symptoms were noticed, not when last well.</li><li>Forgetting anticoagulants and bleeding risk.</li><li>Not using the wife's collateral history.</li><li>Naming a firm diagnosis before assessment.</li></ul>
+</div></details>
+
+<details class="learn" id="eqa"><summary>Examiner questions (tap each for the model answer)</summary><div class="b">
+
+<details><summary>1. Immediate actions and investigations?</summary><div class="b"><ul><li>ABCDE, oxygen only if hypoxic.</li><li>Capillary glucose to exclude hypoglycaemia.</li><li>FAST and NIHSS, then alert the stroke team.</li><li>Urgent non-contrast CT head; CT angiography if thrombectomy is considered.</li><li>12-lead ECG for atrial fibrillation; bloods including clotting and group and save; IV access.</li><li>Monitor BP, heart rate, saturations and temperature.</li></ul></div></details>
+
+<details><summary>2. What time windows apply to reperfusion?</summary><div class="b"><ul><li>Thrombolysis (alteplase or tenecteplase per local protocol): within 4.5 hours of onset, once haemorrhage is excluded.</li><li>Thrombectomy for a large vessel occlusion: generally within 6 hours; selected patients up to 24 hours from last known well, guided by advanced imaging.</li><li>Use the last known well time, not the time symptoms were noticed.</li><li>BP below 185/110 before thrombolysis and below 180/105 after.</li></ul></div></details>
+
+<details><summary>3. Contraindications and cautions for thrombolysis?</summary><div class="b"><ul><li>Intracranial haemorrhage on CT, previous brain bleed, suspected subarachnoid haemorrhage.</li><li>Recent major surgery or trauma, active internal bleeding, coagulopathy.</li><li>Therapeutic anticoagulation (recent DOAC, raised INR on warfarin).</li><li>Uncontrolled hypertension, glucose outside the safe range, recent stroke or head injury.</li><li>Others per local protocol.</li></ul></div></details>
+
+<details><summary>4. Common stroke mimics?</summary><div class="b"><ul><li>Hypoglycaemia (check glucose first), seizure with Todd's paresis, migraine with aura.</li><li>Sepsis or delirium, syncope, Bell's palsy, functional neurological disorder.</li><li>Old stroke deficits worsening during infection.</li></ul></div></details>
+
+<details><summary>5. A TIA with fully resolved symptoms: management?</summary><div class="b"><ul><li>Aspirin 300 mg immediately once haemorrhage is not suspected.</li><li>Specialist assessment within 24 hours.</li><li>ECG, bloods, glucose, brain and vascular imaging as indicated.</li><li>Secondary prevention (statin, BP control, smoking cessation, antithrombotic therapy) and driving advice.</li></ul></div></details>
+
+</div></details>
+
+<details class="learn"><summary>Teaching points</summary><div class="b"><ol>
+<li><b>Time is brain.</b> Last known well is the most important question.</li>
+<li><b>Open first, then closed.</b> The funnel captures the patient's story, then fills gaps safely.</li>
+<li><b>Collateral history</b> is essential when speech or comprehension is affected.</li>
+<li><b>Check glucose</b> in every suspected stroke.</li>
+<li><b>Never skip the safety screen</b> for anticoagulants and bleeding risk.</li>
+<li><b>Premorbid function</b> guides treatment decisions and prognosis.</li>
+<li>Be honest about uncertainty when counselling an anxious patient and relative.</li></ol>
+</div></details>
+
+<details class="learn"><summary>Resources for learners</summary><div class="b"><ul><li>NICE guideline NG128: Stroke and transient ischaemic attack in over 16s.</li><li>Royal College of Physicians: National Clinical Guideline for Stroke for the UK and Ireland.</li><li>Royal College of Emergency Medicine: current clinical guidance on stroke and TIA.</li><li>Stroke Association patient information.</li></ul></div></details>
+
+</div>
+<div class="st" id="s2" hidden>
+<h2 id="ces">Cauda equina syndrome: OSCE station</h2>
+<div class="meta"><span>Emergency medicine</span><span>8 min history</span><span>2 min examiner questions</span><span>20 marks</span></div>
+<details class="learn" open><summary>Aim and learning outcomes</summary><div class="b"><p>Assess a sensitive, focused history in a patient with back pain and possible cauda equina syndrome, a surgical emergency where speed protects bladder, bowel and sexual function.</p><ul><li>Open with an open question, then use focused closed questions.</li><li>Ask about saddle numbness, bladder, bowel and sexual function, sensitively and in private.</li><li>Cover leg symptoms and other red flags.</li><li>Explain the urgency in plain language and state a plan: urgent MRI and early spinal team involvement.</li></ul></div></details>
+<details><summary>Candidate instructions</summary><div class="b"><p>You are the emergency department doctor. Mr Daniel Reid, 42, has come to the department with back pain. Observations are normal. Take a focused history. <b>Do not examine.</b> At the end, summarise and state your initial plan.</p></div></details>
+<section class="exam" id="x2" data-view="candidate"></section>
+<details class="learn"><summary>Actor brief: patient, Mr Daniel Reid</summary><div class="b"><p><b>Manner:</b> worried, a little embarrassed about bladder and bowel questions.</p><p><b>After an open question:</b> "I hurt my back lifting boxes five days ago. Now it's down both legs, and I'm struggling to pass water." After "anything else?": "My right foot keeps catching, and I feel numb in a weird place."</p><ul><li>Back pain from lifting five days ago. Pain down both legs for two days, right worse. Right foot catching, no falls.</li><li>Since yesterday: numb around the back passage and inner thighs, can't feel toilet paper properly.</li><li>Bladder: hard to start, does not feel when full, dribbled this morning.</li><li>Bowels: constipated, did not feel the stool pass. Erections harder since yesterday (only if asked sensitively).</li><li>No fever, weight loss, cancer, IV drug use, recent infection or procedure, steroids or blood thinners. Only the lifting injury.</li><li>PMH: earlier back pain episodes, nothing serious. Takes ibuprofen and codeine. No allergies. Smokes 10 a day. Warehouse worker, lives with his partner.</li><li>Concerns (if asked): "Will I be paralysed? Will I work again? I can't cope with being incontinent."</li></ul></div></details>
+<details class="learn"><summary>Model history-taking interaction</summary><div class="b">
+<details><summary>Part 1. Introduction, consent and privacy</summary><div class="b"><p class="d dr"><b>Doctor:</b> Hello, I'm Dr Shah, one of the emergency doctors. Can you confirm your full name and date of birth?</p><p class="d"><b>Patient:</b> Daniel Reid, 12th June 1984.</p><p class="d dr"><b>Doctor:</b> Thank you. I'll need to ask some personal questions about your bladder and bowels. Are you comfortable here, or would you like more privacy or a chaperone?</p><p class="d"><b>Patient:</b> Here is fine.</p></div></details>
+<details><summary>Part 2. Open question</summary><div class="b"><p class="d dr"><b>Doctor:</b> Could you tell me what has been happening, in your own words?</p><p class="d"><b>Patient:</b> I hurt my back lifting boxes five days ago. Now it's down both legs, and I'm struggling to pass water.</p><p class="d dr"><b>Doctor:</b> Thank you. Is there anything else you've noticed?</p><p class="d"><b>Patient:</b> My right foot keeps catching, and I feel numb in a weird place.</p></div></details>
+<details><summary>Part 3. Saddle numbness</summary><div class="b"><p class="d dr"><b>Doctor:</b> I'm going to ask some specific questions now. Where exactly is the numbness? Is it around your back passage, genitals or inner thighs, the area that would touch a saddle?</p><p class="lm">Key finding: saddle numbness since yesterday.</p><p class="d"><b>Patient:</b> Yes, since yesterday. When I wipe, I can't feel it properly.</p></div></details>
+<details><summary>Part 4. Bladder, bowel and sexual function</summary><div class="b"><p class="d dr"><b>Doctor:</b> Is it hard to start passing urine? Can you feel when your bladder is full? Any leaking?</p><p class="d"><b>Patient:</b> Hard to start, I don't feel it's full, and I dribbled this morning.</p><p class="d dr"><b>Doctor:</b> What about your bowels?</p><p class="d"><b>Patient:</b> Constipated, and I didn't feel it when I went.</p><p class="d dr"><b>Doctor:</b> This next question is sensitive, but important. Any change in erections or sexual function?</p><p class="d"><b>Patient:</b> Yes, harder since yesterday.</p></div></details>
+<details><summary>Part 5. Legs and other red flags</summary><div class="b"><p class="d dr"><b>Doctor:</b> Is the leg pain in one leg or both? Any weakness, numbness or falls?</p><p class="d"><b>Patient:</b> Both, the right is worse. My foot catches. No falls.</p><p class="d dr"><b>Doctor:</b> Any fever, weight loss, history of cancer, injecting drugs, recent infection or procedure, steroids or blood thinners?</p><p class="d"><b>Patient:</b> None of those.</p></div></details>
+<details><summary>Part 6. Background and social</summary><div class="b"><p class="d dr"><b>Doctor:</b> Have you had back problems before? What medicines do you take? Any allergies? What do you do for work, and who is at home?</p><p class="d"><b>Patient:</b> Some back aches before, nothing serious. Ibuprofen and codeine, no allergies. I work in a warehouse and live with my partner. I smoke ten a day.</p></div></details>
+<details><summary>Part 7. Ideas, concerns and expectations</summary><div class="b"><p class="d dr"><b>Doctor:</b> What is worrying you most?</p><p class="d"><b>Patient:</b> Will I be paralysed? Will I work again? I can't cope with being incontinent.</p><p class="d dr"><b>Doctor:</b> Those are understandable worries. This is why we are acting quickly, because treating pressure on the nerves early gives the best chance of recovery.</p></div></details>
+<details><summary>Part 8. Summary and plan</summary><div class="b"><p class="d dr"><b>Doctor:</b> Let me summarise. Daniel, you hurt your back five days ago, and now have pain down both legs, a right foot that catches, numbness around your back passage, trouble passing urine, reduced bowel sensation and a change in sexual function. I'm worried this could be pressure on the bundle of nerves at the bottom of the spine, called cauda equina syndrome. It is an emergency. I'm arranging a bladder scan and an urgent MRI of your spine, and calling the spinal team now. I'll also examine you, including checking feeling and muscle tone around the back passage, with a chaperone. Is that alright?</p><p class="d"><b>Patient:</b> Yes. Thank you.</p></div></details>
+</div></details>
+<div id="l2"></div>
+<details class="learn"><summary>Teaching points</summary><div class="b"><ol><li><b>Ask about saddle numbness and bladder and bowel function</b> in every back pain history.</li><li>Create privacy and ask sensitively.</li><li>Early symptoms can be subtle: altered sensation, hesitancy, not just retention.</li><li>It is an emergency: early MRI and spinal team.</li><li>Never reassure falsely or discharge on painkillers when red flags are present.</li><li>Document a clear neurological baseline.</li></ol></div></details>
+</div>
+<p class="foot">Fictional teaching case for exam practice. Structure follows UK emergency medicine practice. Check current local protocols and guidance before use.</p>
+</main>
+<script>
+(function(){
+var all=function(){return document.querySelectorAll("details")};
+var $=function(i){return document.getElementById(i)};
+function mode(m){document.body.setAttribute('data-mode',m);$('m1').setAttribute('aria-pressed',m=='learn');$('m2').setAttribute('aria-pressed',m=='exam');window.scrollTo(0,0)}
+$('m1').onclick=function(){mode('learn')};$('m2').onclick=function(){mode('exam')};
+var T=480,ph=0,iv=null,tm=$('tm'),tp=$('tp'),ts=$('ts');
+function f(n){return(n<10?'0':'')+n}
+function draw(){tm.textContent=f(Math.floor(T/60))+':'+f(T%60);tm.className='timer'+(T<=60&&ph<2?' warn':'');tp.textContent=ph==0?'History taking':ph==1?'Examiner questions':'Time up'}
+function stop(){clearInterval(iv);iv=null;ts.textContent='Start'}
+ts.onclick=function(){if(iv){stop();return}if(ph==2)return;ts.textContent='Pause';iv=setInterval(function(){T--;if(T<0){if(ph==0){ph=1;T=120}else{ph=2;T=0;stop()}}draw()},1000)};
+$('tr').onclick=function(){stop();T=480;ph=0;draw()};
+var rows=[['Introduction and consent',2],['Open questioning',2],['Last known well',2],['Signposting',1],['Symptom screen',3],['Reperfusion safety screen',2],['PMH, drugs, allergies, family',2],['Social and function',1],['Ideas, concerns, expectations',1],['Summary and plan',2],['Communication and empathy',2]];
+var mt=$('mt'),h='<tr><th>Domain</th><th>Mark</th></tr>';
+rows.forEach(function(r){var o='';for(var k=0;k<=r[1];k++)o+='<option>'+k+'</option>';h+='<tr><td>'+r[0]+' (max '+r[1]+')</td><td><select class="mk" aria-label="'+r[0]+'">'+o+'</select></td></tr>'});
+mt.innerHTML=h;
+function tot(){var s=0;document.querySelectorAll('.mk').forEach(function(x){s+=+x.value});$('tt').textContent=s}
+mt.addEventListener('change',tot);
+function view(v){document.querySelector('.exam').setAttribute('data-view',v);$('v1').setAttribute('aria-pressed',v=='candidate');$('v2').setAttribute('aria-pressed',v=='examiner')}
+$('v1').onclick=function(){view('candidate')};$('v2').onclick=function(){view('examiner')};
+$('ea').innerHTML=$('eqa').innerHTML;
+document.querySelectorAll('[data-s]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.getAttribute('data-s');document.querySelectorAll('.st').forEach(function(x){x.hidden=(x.id!=s)});$(s).scrollIntoView()}});
+(function(){
+(function(){
+function tbl(h,r){return '<div class="scroll"><table><tr><th>'+h[0]+'</th><th>'+h[1]+'</th></tr>'+r.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>'}).join('')+'</table></div>'}
+function det(t,b,c,o){return '<details class="'+(c||'')+'"'+(o?' open':'')+'><summary>'+t+'</summary><div class="b">'+b+'</div></details>'}
+function ul(a){return '<ul>'+a.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
+var R=[['Introduction, consent and ID check',2],['Open question and prompt',2],['Onset, timing and course',3],['Focused symptom screen',3],['Red flags and risk screen',3],['PMH, drugs, allergies, family, social',2],['Ideas, concerns, expectations',1],['Summary and plan',2],['Communication and empathy',2]];
+function build(c){
+var lab={d:'Doctor',p:'Patient',w:c.wl||'Witness'},cl={d:'d dr',p:'d',w:'d w'};
+var dl=c.parts.map(function(x,i){return det('Part '+(i+1)+'. '+x[0],x[1].map(function(l){return '<p class="'+cl[l[0]]+'"><b>'+lab[l[0]]+':</b> '+l[1]+'</p>'}).join(''))}).join('');
+var Qa=c.Q.map(function(x,i){return det((i+1)+'. '+x[0],x[1])}).join('');
+var G=det('What the examiner expects',tbl(['Task','Expected in this station'],[['Do','Introduce yourself, check name and date of birth, start with an open question, listen, signpost, summarise and state a plan.'],['Find',c.find],['Ask',c.ask],['Manage',c.mng],['React','Acknowledge fear, stay calm, do not falsely reassure, say you would ask the senior when unsure.']]),'ev',1)+det('If this happens, react like this',tbl(['Situation','Good response'],c.re),'ev')+det('Plain-language words to use',tbl(['Medical term','Say instead'],c.pl),'ev')+det('Answering patient questions',tbl(['Question','Model reply'],c.pq)+'<p>Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance.</p>','ev')+det('Examiner questions with model answers',Qa,'ev')+det('Red flags for examiners',ul(c.fl.concat(['No summary or plan, or jargon without explanation.'])),'ev');
+var h='<div class="st" id="'+c.id+'" hidden><h2>'+c.t+': OSCE station</h2><div class="meta"><span>Emergency medicine</span><span>8 min history</span><span>2 min examiner questions</span><span>20 marks</span></div>'+det('Aim and learning outcomes','<p>'+c.aim+'</p>','learn',1)+det('Candidate instructions','<p>'+c.inst+' <b>Do not examine.</b> At the end, summarise and state your initial plan.</p>','')+'<section class="exam" data-view="candidate"></section>'+det('Actor brief',ul(c.brief),'learn')+det('Model history-taking interaction',dl,'learn')+det('Examiner mark scheme (20 marks)',tbl(['Domain','Marks'],R.map(function(r){return[r[0],r[1]]})),'learn')+det('Examiner questions (tap each for the model answer)',Qa,'learn')+det('Teaching points',ul(c.tp),'learn')+'</div>';
+$('s2').insertAdjacentHTML('afterend',h);
+var el=$(c.id).querySelector('.exam');
+el.innerHTML='<div class="seg"><button type="button" class="v1" aria-pressed="true">Candidate view</button><button type="button" class="v2" aria-pressed="false">Examiner view</button></div><div class="card cv"><p class="sub">Candidate: read the instructions above, then start the timer.</p><div class="timer">08:00</div><p class="tp">History taking</p><div class="bar"><button type="button" class="ts">Start</button><button type="button" class="tr">Reset</button></div></div>'+det('Examiner marking sheet','<div class="scroll"><table class="mt"></table></div><p class="tot">Total: <span class="tt">0</span> / 20</p><p>Global rating: <select aria-label="Global rating"><option>Not rated</option><option>Clear pass</option><option>Pass</option><option>Borderline</option><option>Fail</option></select></p><button type="button" class="rs">Clear marks</button>','ev',1)+G+det('Examiner questions (2 minutes)','<ol>'+c.Q.map(function(x){return '<li>'+x[0]+'</li>'}).join('')+'</ol><p class="sub">Model answers are in Learning mode.</p>','cv',1);
+var q=function(s){return el.querySelector(s)},t=480,p=0,iv=null,tm=q('.timer'),tp=q('.tp'),ts=q('.ts');
+function f(n){return(n<10?'0':'')+n}
+function dr(){tm.textContent=f(Math.floor(t/60))+':'+f(t%60);tm.className='timer'+(t<=60&&p<2?' warn':'');tp.textContent=p==0?'History taking':p==1?'Examiner questions':'Time up'}
+function sp(){clearInterval(iv);iv=null;ts.textContent='Start'}
+ts.onclick=function(){if(iv){sp();return}if(p==2)return;ts.textContent='Pause';iv=setInterval(function(){t--;if(t<0){if(p==0){p=1;t=120}else{p=2;t=0;sp()}}dr()},1000)};
+q('.tr').onclick=function(){sp();t=480;p=0;dr()};
+var mt=q('.mt'),hh='<tr><th>Domain</th><th>Mark</th></tr>';
+R.forEach(function(r){var o='';for(var k=0;k<=r[1];k++)o+='<option>'+k+'</option>';hh+='<tr><td>'+r[0]+' (max '+r[1]+')</td><td><select class="mk" aria-label="'+r[0]+'">'+o+'</select></td></tr>'});
+mt.innerHTML=hh;
+function tt(){var s=0;el.querySelectorAll('.mk').forEach(function(x){s+=+x.value});q('.tt').textContent=s}
+mt.addEventListener('change',tt);
+q('.rs').onclick=function(){el.querySelectorAll('.mk').forEach(function(x){x.selectedIndex=0});q('select:not(.mk)').selectedIndex=0;tt()};
+function vw(v){el.setAttribute('data-view',v);q('.v1').setAttribute('aria-pressed',v=='candidate');q('.v2').setAttribute('aria-pressed',v=='examiner')}
+q('.v1').onclick=function(){vw('candidate')};q('.v2').onclick=function(){vw('examiner')};
+}
+[{id:'sah',t:'Subarachnoid haemorrhage',wl:'Witness',aim:'Assess history taking in a sudden severe headache, recognising subarachnoid haemorrhage through the time-critical, red-flag approach.',inst:'You are the emergency doctor. Ms Sarah Khan, 38, has come in with a sudden severe headache. Observations: BP 158/94, HR 96, temperature 36.9, GCS 15. Take a focused history.',brief:['Onset 14:10 at the gym: sudden, at its worst within a minute, worst headache of her life, back of the head.','Vomited twice, neck stiff and sore, light hurts. Felt woozy, no clear blackout, no fit.','No head injury, fever or rash. No weakness, speech or vision change.','No similar headaches before; occasional mild migraine.','High blood pressure on ramipril. Smokes 15 a day. No blood thinners, no cocaine, no allergies.','Mother died suddenly at 52 ("something in her head"); an uncle had polycystic kidney disease.','Concern if asked: "Is it a bleed like my mum? Am I going to die?"'],parts:[['Introduction and open question',[['d','Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?'],['p','Sarah Khan, 3rd May 1988.'],['d','Could you tell me what has been happening, in your own words?'],['p','I was at the gym and got a sudden terrible headache at the back of my head. It is the worst I have ever had.'],['d','Thank you. Is there anything else you have noticed?'],['p','I have been sick twice, my neck is stiff and the light hurts my eyes.']]],['Onset and time',[['d','I am going to ask some specific questions now. Exactly what time did it start, and how quickly did it become severe?'],['p','About ten past two. It was at its worst within a minute, like being hit.'],['d','Did you black out, have a fit, or feel faint?'],['p','I felt woozy but did not black out. No fit.'],['d','Any head injury, fever or rash?'],['p','No, none of those.']]],['Neurological and red flags',[['d','Any weakness, numbness, speech or vision problems, or double vision?'],['p','No, only light bothers me.'],['d','Have you had headaches like this before?'],['p','Never like this. I get mild migraines sometimes.'],['d','Do you take blood thinners, or use cocaine or other drugs?'],['p','No to both.']]],['Background and family',[['d','Do you have any medical conditions, take regular medicines, or have allergies?'],['p','High blood pressure, ramipril. No allergies.'],['d','Does anyone in your family have bleeds in the brain, aneurysms or kidney problems? Do you smoke?'],['p','My mum died suddenly at 52, they said something in her head. My uncle had polycystic kidney disease. I smoke fifteen a day.']]],['Ideas, concerns and summary',[['d','What do you think might be going on, and what worries you most?'],['p','Is it a bleed like my mum? Am I going to die?'],['d','That is an understandable fear. I will be honest: this could be bleeding around the brain, and it needs urgent tests. We are acting quickly. To summarise, you had a sudden severe headache that peaked within a minute at 14:10, with vomiting, a stiff neck and light sensitivity, you have high blood pressure and smoke, and your mother died suddenly. I am arranging an urgent CT scan of your head, bloods and a heart tracing, and I will speak to the senior doctor and the neurosurgical team. Any questions?'],['p','No. Thank you.']]]],Q:[['What are your immediate actions and investigations?','<ul><li>ABCDE, glucose, IV access, bloods, ECG, regular GCS and neurological observations.</li><li>Urgent non-contrast CT head, most sensitive within 6 hours of onset.</li><li>If CT is negative and more than 6 hours from onset, follow the local pathway: lumbar puncture (at least 12 hours after onset, for xanthochromia) or CT angiography.</li><li>Early senior and neurosurgical discussion, analgesia and antiemetic, nil by mouth.</li></ul>'],['What are the causes and risk factors?','<ul><li>Ruptured berry aneurysm is the commonest cause.</li><li>Risk factors: smoking, hypertension, family history, polycystic kidney disease, heavy alcohol, cocaine.</li><li>Other causes: arteriovenous malformation, trauma.</li></ul>'],['Which headache features are red flags?','<ul><li>Thunderclap onset, exertional onset, neck stiffness, vomiting, collapse or seizure.</li><li>Focal neurology, reduced GCS, fever with rash, new headache over 50, papilloedema.</li></ul>'],['What are the main complications and treatments?','<ul><li>Rebleeding, hydrocephalus, vasospasm with delayed ischaemia, seizures, hyponatraemia.</li><li>Nimodipine for confirmed SAH, BP control as advised by neurosurgery, and aneurysm securing by coiling or clipping.</li></ul>']],find:'Thunderclap headache peaking within a minute at 14:10 on exertion, vomiting, neck stiffness, photophobia, brief wooziness, hypertension, smoker, family history of sudden death and polycystic kidney disease, no blood thinners.',ask:'Exact onset time and speed, collapse, fit, head injury, fever, rash, neurological symptoms, previous headaches, blood thinners, cocaine, hypertension, smoking, family history.',mng:'Say aloud: ABCDE, glucose, urgent CT head, bloods, ECG, neurological observations, analgesia and antiemetic, senior and neurosurgical discussion, lumbar puncture or CT angiography per pathway if CT negative.',re:[['Patient becomes drowsy','Recheck ABCDE and GCS, call the senior and critical care, repeat glucose, tell the neurosurgical team.'],['Patient vomits and has a fit','Protect the airway, call for help, follow the seizure protocol, arrange urgent CT.'],['Patient is frightened of dying','Acknowledge the fear, be honest, explain what happens next.']],pl:[['Subarachnoid haemorrhage','Bleeding in the space around the brain'],['Aneurysm','A weak, ballooned part of a blood vessel'],['Thunderclap headache','A sudden, extremely severe headache'],['Photophobia','Light hurting the eyes'],['CT scan','A quick scan that takes pictures of the brain'],['Lumbar puncture','A needle test in the lower back to take fluid']],pq:[['Is it a bleed?','"It could be. The scan will show us quickly."'],['Am I going to die?','"This can be serious, and we are acting fast, which gives you the best chance."'],['Do I need surgery?','"If it is a bleed from a weak vessel, a specialist team may treat it with a procedure or an operation."'],['Could my family be affected?','"Some causes run in families. The specialist team will advise you later."']],fl:['Not asking exactly when and how fast it began.','Calling it migraine without excluding red flags.','No CT, or no senior and neurosurgical escalation.'],tp:['Ask exactly how fast the headache peaked.','Thunderclap onset is subarachnoid haemorrhage until proven otherwise.','CT head is most sensitive early, so time matters.','Do not label migraine without excluding red flags.']},
+{id:'fs',t:'First seizure',wl:'Colleague',aim:'Assess history taking after a first seizure, using a witness account to separate seizure from syncope and other mimics, and giving safe advice.',inst:'You are the emergency doctor. Mr Tom Walker, 24, was brought in by ambulance after a collapse at work. He is now alert, observations are normal and glucose is 5.9. His colleague Anna saw the event and is with him. Take a focused history from both.',brief:['Tom: felt odd (rising feeling in the stomach, strange smell), then woke on the floor with a sore tongue and wet trousers. Headache and aching since.','Anna: he went stiff, then jerked all over for about two minutes, eyes open, lips blue, did not respond. Bit the side of his tongue. Confused for about 20 minutes. Did not hit his head hard.','No fever or neck stiffness. Three hours of sleep and heavy drinking the night before.','No previous seizures, jerks or blank spells. No drugs, medicines or allergies. No family history.','Office worker, lives with flatmates, drives to work, plays football.','Concern if asked: "Do I have epilepsy? Can I still drive? Will it happen again?"'],parts:[['Introduction and open question',[['d','Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?'],['p','Tom Walker, 9th March 2002.'],['d','Could you tell me what happened today, in your own words?'],['p','I remember feeling odd, then waking on the floor. My tongue is sore and I am wet.'],['d','Thank you. Is there anything else?'],['p','My head aches and I am achy all over.']]],['Witness account',[['d','Anna, you saw it. Can you describe what happened from the start?'],['w','He went stiff, then jerked all over for about two minutes. His lips went blue and he did not respond. He bit his tongue.'],['d','How long was he confused afterwards? Did he injure himself when he fell?'],['w','About twenty minutes. He did not hit his head hard.']]],['Before, triggers and mimics',[['d','Tom, what did you feel just before? Any sweating, dizziness or palpitations on standing?'],['p','A rising feeling in my stomach and a strange smell. No palpitations.'],['d','Any head injury, fever, drugs or alcohol, and how did you sleep?'],['p','Three hours of sleep, and I drank a lot last night.']]],['Past, drugs and family',[['d','Any earlier episodes, jerks or blank spells? Medical conditions, medicines, allergies, or family history of epilepsy?'],['p','None of those.']]],['Concerns and summary',[['d','Do you drive? What worries you most?'],['p','I drive to work. Do I have epilepsy? Will it happen again?'],['d','Those are fair questions. One seizure does not always mean epilepsy, and a specialist clinic will assess you. To summarise, you had a witnessed generalised seizure lasting two minutes, with a warning sensation, tongue biting and twenty minutes of confusion, after poor sleep and heavy drinking, and your glucose is normal. I will arrange bloods and a heart tracing, refer you urgently to the first seizure clinic, and go through safety advice, including driving. Any questions?'],['p','No. Thanks.']]]],Q:[['What are your immediate actions and investigations?','<ul><li>ABCDE and glucose (done).</li><li>Bloods including electrolytes, calcium and magnesium, and ECG to exclude cardiac syncope.</li><li>Pregnancy test where relevant.</li><li>CT head if head injury, persistent deficit or other red flags.</li></ul>'],['How do you tell seizure from syncope?','<ul><li>Seizure: aura, longer tonic-clonic movements, lateral tongue bite, incontinence, prolonged confusion, slow recovery.</li><li>Syncope: prodrome (sweating, tunnel vision), triggers such as standing, brief jerks, rapid recovery, pallor.</li></ul>'],['What advice do you give at discharge?','<ul><li>Do not drive and tell the DVLA.</li><li>Avoid heights, swimming alone and baths; shower instead.</li><li>Avoid heavy alcohol and sleep loss.</li><li>Urgent first seizure clinic referral. Antiepileptic drugs are not routinely started from the ED after a first unprovoked seizure.</li><li>Give written advice and seizure first aid guidance to those at home.</li></ul>'],['What are common provoked causes?','<ul><li>Hypoglycaemia, alcohol intoxication or withdrawal, drugs.</li><li>Electrolyte disturbance, infection (meningitis, encephalitis), head injury, stroke, eclampsia.</li></ul>']],find:'Witnessed two-minute generalised tonic-clonic seizure with aura (rising feeling, smell), lateral tongue bite, incontinence, 20 minutes of confusion, sleep deprivation and alcohol, no previous episodes, glucose normal.',ask:'Witness account, aura, duration, tongue bite, incontinence, recovery, head injury, fever, alcohol and drugs, sleep, previous episodes, family history, driving, work.',mng:'Say aloud: ABCDE, glucose, bloods, ECG, consider CT head, first seizure clinic referral, written safety and driving advice, no routine antiepileptic from the ED.',re:[['Patient seizes again','Protect from injury, time it, airway and oxygen, call for help, give a first-line benzodiazepine if beyond five minutes per protocol.'],['Patient is tearful about driving','Acknowledge the loss of independence, give clear written advice, explain the specialist will review.'],['Witness is distressed','Thank her, reassure that she acted correctly, give simple seizure first aid advice.']],pl:[['Seizure or fit','A sudden burst of abnormal electrical activity in the brain'],['Tonic-clonic','Stiffening followed by jerking'],['Aura','A warning feeling before it starts'],['Post-ictal','The confused, tired phase after a fit'],['Epilepsy','A tendency to have repeated seizures'],['EEG','A painless test that records electrical activity of the brain']],pq:[['Do I have epilepsy?','"One seizure does not always mean epilepsy. The specialist clinic will assess you and decide."'],['Can I drive?','"Not for now. You must not drive and need to tell the DVLA. The clinic will advise when it is safe."'],['Will it happen again?','"It might. Avoiding sleep loss and heavy alcohol helps, and the clinic will talk about your risk."'],['Do I need tablets?','"Not usually after a first seizure. The specialist will decide after assessment."']],fl:['Missing the witness account or not separating seizure from syncope.','Not checking glucose.','No driving or safety advice, or no follow-up referral.'],tp:['A witness account is the most useful part of a first seizure history.','Check glucose and look for provoked causes.','Always give driving and safety advice.','Do not routinely start antiepileptic drugs from the ED after a first unprovoked seizure.']},
+{id:'mg',t:'Meningitis',wl:'Friend',aim:'Assess history taking in suspected meningitis in a young adult, recognising sepsis and the need for immediate antibiotics, and the public health aspects.',inst:'You are the emergency doctor. Ms Priya Nair, 19, a first-year student, has arrived with her friend Maya. Observations: temperature 38.9, HR 118, BP 100/60, RR 22, GCS 14. Take a focused history from both.',brief:['Priya: headache since last night, now severe, light hurts, neck stiff, hot and shivery, vomited twice, very tired.','Maya: Priya was well until two days ago, worse overnight, drowsy and a bit confused this morning. A few small purple spots on her legs appeared an hour ago.','No head injury, ear or sinus infection, recent travel or seizure.','Lives in university halls, went to a freshers party last weekend, shares a kitchen. Unsure about meningitis vaccines.','No medical conditions, medicines, allergies or immunosuppression.','Concern if asked: "Is it meningitis? Am I going to die? Could I have given it to my friends?"'],parts:[['Introduction and open question',[['d','Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?'],['p','Priya Nair, 14th January 2007.'],['d','Could you tell me what has been happening, in your own words?'],['p','A bad headache since last night. I feel hot and shivery, and light hurts my eyes.'],['d','Thank you. Anything else?'],['p','My neck is stiff and I have been sick twice.']]],['Time course and symptoms',[['d','Maya, when was Priya last completely well?'],['w','Two days ago she was fine. Last night she got a bad headache and fever, and this morning she was drowsy and confused.'],['d','Any rash?'],['w','A few small purple spots on her legs, starting an hour ago.'],['d','Priya, any fits, or a head injury?'],['p','No fits, no head injury.']]],['Risk factors and contacts',[['d','Any ear or sinus infection, travel, or contact with someone with meningitis? Where do you live?'],['p','I live in halls, and there was a big party last weekend.'],['d','Have you had the meningitis vaccines? Any conditions, medicines or allergies?'],['p','I am not sure about the vaccines. No conditions, no medicines, no allergies.']]],['Ideas, concerns and plan',[['d','What worries you most?'],['p','Is it meningitis? Am I going to die? Could I have given it to my friends?'],['d','I understand. This could be meningitis or blood poisoning, and we treat it as an emergency. To summarise, you have had fever, severe headache, a stiff neck, light sensitivity, vomiting and drowsiness since last night, with a new purple rash, and you live in halls. I am giving you antibiotics through a drip straight away, taking blood tests and giving fluids, and the senior doctor will see you now. A scan or a back needle test may follow. We will also tell public health, who will look after your close contacts. Any questions?'],['p','No, please hurry.']]]],Q:[['What are your immediate actions?','<ul><li>Sepsis approach: oxygen, IV access, blood cultures, lactate, glucose, fluids.</li><li>Immediate IV ceftriaxone. Do not delay for CT or lumbar puncture.</li><li>Dexamethasone per local guidance, early senior and critical care review, consider aciclovir if encephalitis is possible.</li></ul>'],['When must you scan before a lumbar puncture?','<ul><li>Reduced GCS, focal neurology, new seizures, papilloedema, immunocompromise, or signs of raised intracranial pressure.</li><li>Never delay antibiotics. Send blood PCR, and perform the LP when safe.</li></ul>'],['What does the non-blanching rash suggest?','<ul><li>Meningococcal septicaemia: an emergency.</li><li>Give antibiotics immediately and call for senior help. Use the glass test.</li></ul>'],['What public health steps are needed?','<ul><li>Notify the local health protection team.</li><li>Close contacts may need preventive antibiotics and vaccination advice.</li><li>Droplet precautions until 24 hours of effective treatment.</li></ul>']],find:'Fever, severe headache, neck stiffness, photophobia, vomiting and drowsiness since last night, new non-blanching purple spots, university halls and recent party, unsure of vaccination, not immunosuppressed.',ask:'Time course, rash, neck stiffness, photophobia, confusion, fits, head injury, ear or sinus infection, travel, contacts, vaccination, immunosuppression, medicines, allergies.',mng:'Say aloud: sepsis pathway, blood cultures, immediate IV ceftriaxone, fluids, glucose, lactate, senior and critical care review, CT before LP only if indicated, notify public health.',re:[['Patient becomes drowsier','Recheck ABCDE and GCS, call critical care, do not delay antibiotics.'],['Friend is worried about spreading it','Reassure, explain public health will advise close contacts about preventive antibiotics.'],['Asked to wait for the scan first','Explain that antibiotics come first and the scan follows if needed.']],pl:[['Meningitis','Infection of the lining around the brain and spinal cord'],['Septicaemia','Infection in the blood'],['Photophobia','Light hurting the eyes'],['Non-blanching rash','Spots that do not fade when pressed'],['Lumbar puncture','A needle test in the lower back to take fluid'],['Prophylaxis','Preventive antibiotics for close contacts']],pq:[['Is it meningitis?','"It could be. We are treating you straight away without waiting for tests."'],['Am I going to die?','"This is serious, and we are acting very quickly, which gives you the best chance."'],['Could I have infected my friends?','"Public health will contact close contacts and give preventive advice."'],['Why antibiotics before the scan?','"Every hour counts. The scan will not change what we give first."']],fl:['Delaying antibiotics for a scan or lumbar puncture.','Missing the rash, or not asking about vaccination and contacts.','No senior escalation or sepsis plan.'],tp:['Antibiotics first, tests second.','Look for a non-blanching rash.','Ask about vaccination, living situation and contacts.','Notify public health.']}].forEach(build);
+})();
+function tbl(h,r){return '<div class="scroll"><table><tr><th>'+h[0]+'</th><th>'+h[1]+'</th></tr>'+r.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td></tr>'}).join('')+'</table></div>'}
+function det(t,b,c,o){return '<details class="'+(c||'')+'"'+(o?' open':'')+'><summary>'+t+'</summary><div class="b">'+b+'</div></details>'}
+var R=[['Introduction, consent, privacy and chaperone offer',2],['Open question and prompt',2],['Saddle numbness asked and located',2],['Bladder symptoms',2],['Bowel and sexual function, asked sensitively',2],['Leg pain, weakness and numbness',2],['Other red flags',2],['PMH, drugs, allergies, social and work',1],['Ideas, concerns, expectations',1],['Summary and plan',2],['Communication and sensitivity',2]];
+var Q=[['What are your immediate actions and investigations?','<ul><li>Recognise a surgical emergency and escalate early to the senior and the on-call spinal or neurosurgical team.</li><li>Examine: leg power, tone, reflexes, sensation, saddle sensation, and with a chaperone anal tone and sensation.</li><li>Bladder scan for post-void residual volume.</li><li>Emergency MRI of the spine.</li><li>Bloods, analgesia, document a baseline neurological state, repeat observations, nil by mouth in case of surgery.</li></ul>'],['What are the common causes?','<ul><li>Large central lumbar disc prolapse (most common).</li><li>Spinal stenosis.</li><li>Tumour or metastases.</li><li>Epidural abscess or haematoma.</li><li>Trauma or fracture.</li></ul>'],['Which back pain red flags need urgent action?','<ul><li>Saddle numbness, new bladder or bowel dysfunction, sexual dysfunction, bilateral or progressive leg weakness: emergency.</li><li>Also needing prompt work-up: cancer history, fever, injecting drug use, steroids, trauma, age under 20 or over 50, weight loss, night pain.</li></ul>'],['What is the difference between incomplete and retention types?','<ul><li>Incomplete: altered urinary sensation or stream, may still pass urine.</li><li>Retention: painless urinary retention with overflow, with a worse outlook.</li><li>Both are urgent. The aim is to decompress before retention develops.</li></ul>'],['Why does timing matter?','<ul><li>Recovery of bladder, bowel and sexual function depends on how early pressure is relieved.</li><li>Delay risks permanent deficits, so MRI and surgery should happen as soon as possible, following the local spinal pathway.</li></ul>']];
+var G=det('What the examiner expects',tbl(['Task','Expected in this station'],[['Do','Introduce yourself, check name and date of birth, offer privacy and a chaperone, start with an open question, ask sensitive questions kindly, signpost, summarise, state a plan.'],['Find','Five days of back pain after lifting, now bilateral leg pain (right worse), right foot catching, saddle numbness since yesterday, hesitancy and reduced bladder sensation, reduced bowel sensation, new sexual dysfunction, no other red flags.'],['Ask','Saddle sensation, bladder, bowel and sexual function, leg weakness, fever, cancer, injecting drug use, trauma, steroids, blood thinners, previous back problems, work and home, worries.'],['Manage','Say aloud: urgent senior and spinal team review, examination with chaperone including anal tone, bladder scan, emergency MRI spine, bloods, analgesia, baseline neurology, nil by mouth.'],['React','Acknowledge embarrassment and fear, stay calm, do not falsely reassure, say you would ask the senior when unsure.']]),'ev',1)+det('If this happens, react like this',tbl(['Situation','Good response'],[['Patient is embarrassed','Pause, normalise the questions, offer privacy again, then continue.'],['Patient asks to go home','Explain the risk clearly, say you want him to stay for urgent scans, involve the senior.'],['Leg weakness gets worse','Tell the spinal team now, repeat the neurological check, note the time.'],['Patient cannot feel his bladder','Arrange a bladder scan without delay.'],['Time running out','Go straight to red flags and the summary with a plan.'],['Unsure of an examiner question','Say what you know, name the limit, and say you would ask a senior.']]),'ev')+det('Plain-language words to use',tbl(['Medical term','Say instead'],[['Cauda equina','The bundle of nerves at the bottom of the spinal canal'],['Saddle anaesthesia','Numbness around the back passage, genitals and inner thighs, where a saddle would touch'],['Urinary retention','Not being able to empty your bladder'],['Radiculopathy','Nerve pain shooting down the leg'],['Foot drop','Your foot catching or dragging'],['MRI','A detailed scan with a magnet, no radiation'],['Bladder scan','A painless scan to see how much urine is in the bladder'],['Catheter','A thin tube to drain the bladder'],['Decompression','An operation to take pressure off the nerves'],['Erectile dysfunction','Changes in erections or sexual function']]),'ev')+det('Answering patient questions',tbl(['Question','Model reply'],[['Will I be paralysed?','"I cannot promise, but this is exactly why we are acting so fast. Relieving pressure on the nerves early gives the best chance."'],['Will my bladder recover?','"It depends on how long the nerves have been squeezed and how quickly we relieve it. That is why speed matters."'],['Do I need an operation?','"Possibly. The scan will show. If a disc is pressing on the nerves, urgent surgery is often needed."'],['Can I go home with painkillers?','"I am worried about you, so I want you to stay for an urgent scan and the spinal team."'],['Why the back passage examination?','"It checks the nerves there. A chaperone will be present, and you can ask me to stop at any time."'],['Will I work again?','"Let us focus on treatment first. We will talk about recovery and work afterwards."']])+'<p>Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance.</p>','ev')+det('Examiner questions with model answers',Q.map(function(x,i){return det((i+1)+'. '+x[0],x[1])}).join(''),'ev')+det('How to answer the examiner','<ul><li>Say your priority first.</li><li>Use a structure: examine, investigate, escalate.</li><li>Link answers to this patient.</li><li>If unsure, say so and say you would ask a senior.</li></ul>','ev')+det('Red flags for examiners','<ul><li>Not asking about saddle numbness or bladder and bowel function.</li><li>No privacy or sensitivity.</li><li>Reassuring and discharging on painkillers.</li><li>No escalation or MRI plan.</li><li>Jargon without explanation.</li></ul>','ev');
+var el=$('x2');
+el.innerHTML='<div class="seg"><button type="button" class="v1" aria-pressed="true">Candidate view</button><button type="button" class="v2" aria-pressed="false">Examiner view</button></div><div class="card cv"><p class="sub">Candidate: read the instructions above, then start the timer.</p><div class="timer">08:00</div><p class="tp">History taking</p><div class="bar"><button type="button" class="ts">Start</button><button type="button" class="tr">Reset</button></div></div>'+det('Examiner marking sheet','<div class="scroll"><table class="mt"></table></div><p class="tot">Total: <span class="tt">0</span> / 20</p><p>Global rating: <select aria-label="Global rating"><option>Not rated</option><option>Clear pass</option><option>Pass</option><option>Borderline</option><option>Fail</option></select></p><button type="button" class="rs">Clear marks</button>','ev',1)+G+det('Examiner questions (2 minutes)','<ol>'+Q.map(function(x){return '<li>'+x[0]+'</li>'}).join('')+'</ol><p class="sub">Model answers are in Learning mode.</p>','cv',1);
+var q=function(s){return el.querySelector(s)},t=480,p=0,iv=null,tm=q('.timer'),tp=q('.tp'),ts=q('.ts');
+function f(n){return(n<10?'0':'')+n}
+function dr(){tm.textContent=f(Math.floor(t/60))+':'+f(t%60);tm.className='timer'+(t<=60&&p<2?' warn':'');tp.textContent=p==0?'History taking':p==1?'Examiner questions':'Time up'}
+function sp(){clearInterval(iv);iv=null;ts.textContent='Start'}
+ts.onclick=function(){if(iv){sp();return}if(p==2)return;ts.textContent='Pause';iv=setInterval(function(){t--;if(t<0){if(p==0){p=1;t=120}else{p=2;t=0;sp()}}dr()},1000)};
+q('.tr').onclick=function(){sp();t=480;p=0;dr()};
+var mt=q('.mt'),h='<tr><th>Domain</th><th>Mark</th></tr>';
+R.forEach(function(r){var o='';for(var k=0;k<=r[1];k++)o+='<option>'+k+'</option>';h+='<tr><td>'+r[0]+' (max '+r[1]+')</td><td><select class="mk" aria-label="'+r[0]+'">'+o+'</select></td></tr>'});
+mt.innerHTML=h;
+function tt(){var s=0;el.querySelectorAll('.mk').forEach(function(x){s+=+x.value});q('.tt').textContent=s}
+mt.addEventListener('change',tt);
+q('.rs').onclick=function(){el.querySelectorAll('.mk').forEach(function(x){x.selectedIndex=0});q('select:not(.mk)').selectedIndex=0;tt()};
+function vw(v){el.setAttribute('data-view',v);q('.v1').setAttribute('aria-pressed',v=='candidate');q('.v2').setAttribute('aria-pressed',v=='examiner')}
+q('.v1').onclick=function(){vw('candidate')};q('.v2').onclick=function(){vw('examiner')};
+$('l2').innerHTML=det('Examiner mark scheme (20 marks)',tbl(['Domain','Marks'],R.map(function(r){return[r[0],r[1]]})),'learn')+det('Examiner questions (tap each for the model answer)',Q.map(function(x,i){return det((i+1)+'. '+x[0],x[1])}).join(''),'learn');
+})();
+$('rs').onclick=function(){document.querySelectorAll('.mk').forEach(function(x){x.selectedIndex=0});$('gr').selectedIndex=0;tot()};
+document.getElementById("ex").onclick=function(){all().forEach(function(d){d.open=true})};
+document.getElementById("co").onclick=function(){all().forEach(function(d){d.open=false})};
+})();
+document.querySelectorAll('.st').forEach(function(x){x.hidden=(x.id!=='sah')});
+</script>
+</body>
+</html>

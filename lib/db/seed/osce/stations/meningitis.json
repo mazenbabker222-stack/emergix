@@ -1,0 +1,450 @@
+{
+  "slug": "meningitis",
+  "title": "Meningitis",
+  "specialty": "neurology",
+  "topicGroup": "CNS infection",
+  "summary": "Practise a focused history in a time-critical presentation.",
+  "image": "/brand/t5.jpg",
+  "difficulty": "core",
+  "timing": {
+    "readingSeconds": 60,
+    "historySeconds": 480,
+    "examinerSeconds": 120
+  },
+  "totalMarks": 20,
+  "domains": [
+    {
+      "domain": "Introduction, consent and ID check",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Open question and prompt",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Onset, timing and course",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Focused symptom screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Red flags and risk screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "PMH, drugs, allergies, family, social",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Ideas, concerns, expectations",
+      "maxMarks": 1,
+      "descriptor": ""
+    },
+    {
+      "domain": "Summary and plan",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Communication and empathy",
+      "maxMarks": 2,
+      "descriptor": ""
+    }
+  ],
+  "content": {
+    "aim": [
+      {
+        "t": "p",
+        "text": "Assess history taking in suspected meningitis in a young adult, recognising sepsis and the need for immediate antibiotics, and the public health aspects."
+      }
+    ],
+    "candidateInstructions": [
+      {
+        "t": "p",
+        "text": "You are the emergency doctor. Ms Priya Nair, 19, a first-year student, has arrived with her friend Maya. Observations: temperature 38.9, HR 118, BP 100/60, RR 22, GCS 14. Take a focused history from both. <b>Do not examine.</b> At the end, summarise and state your initial plan."
+      }
+    ],
+    "actorBriefs": [
+      {
+        "title": "Actor brief",
+        "blocks": [
+          {
+            "t": "ul",
+            "items": [
+              "Priya: headache since last night, now severe, light hurts, neck stiff, hot and shivery, vomited twice, very tired.",
+              "Maya: Priya was well until two days ago, worse overnight, drowsy and a bit confused this morning. A few small purple spots on her legs appeared an hour ago.",
+              "No head injury, ear or sinus infection, recent travel or seizure.",
+              "Lives in university halls, went to a freshers party last weekend, shares a kitchen. Unsure about meningitis vaccines.",
+              "No medical conditions, medicines, allergies or immunosuppression.",
+              "Concern if asked: \"Is it meningitis? Am I going to die? Could I have given it to my friends?\""
+            ]
+          }
+        ]
+      }
+    ],
+    "modelInteraction": [
+      {
+        "title": "Introduction and open question",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Priya Nair, 14th January 2007."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Could you tell me what has been happening, in your own words?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "A bad headache since last night. I feel hot and shivery, and light hurts my eyes."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. Anything else?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My neck is stiff and I have been sick twice."
+          }
+        ]
+      },
+      {
+        "title": "Time course and symptoms",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Maya, when was Priya last completely well?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Friend",
+            "text": "Two days ago she was fine. Last night she got a bad headache and fever, and this morning she was drowsy and confused."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any rash?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Friend",
+            "text": "A few small purple spots on her legs, starting an hour ago."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Priya, any fits, or a head injury?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No fits, no head injury."
+          }
+        ]
+      },
+      {
+        "title": "Risk factors and contacts",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any ear or sinus infection, travel, or contact with someone with meningitis? Where do you live?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I live in halls, and there was a big party last weekend."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Have you had the meningitis vaccines? Any conditions, medicines or allergies?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I am not sure about the vaccines. No conditions, no medicines, no allergies."
+          }
+        ]
+      },
+      {
+        "title": "Ideas, concerns and plan",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "What worries you most?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Is it meningitis? Am I going to die? Could I have given it to my friends?"
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I understand. This could be meningitis or blood poisoning, and we treat it as an emergency. To summarise, you have had fever, severe headache, a stiff neck, light sensitivity, vomiting and drowsiness since last night, with a new purple rash, and you live in halls. I am giving you antibiotics through a drip straight away, taking blood tests and giving fluids, and the senior doctor will see you now. A scan or a back needle test may follow. We will also tell public health, who will look after your close contacts. Any questions?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No, please hurry."
+          }
+        ]
+      }
+    ],
+    "examinerExpectations": [
+      {
+        "t": "table",
+        "head": [
+          "Task",
+          "Expected in this station"
+        ],
+        "rows": [
+          [
+            "Do",
+            "Introduce yourself, check name and date of birth, start with an open question, listen, signpost, summarise and state a plan."
+          ],
+          [
+            "Find",
+            "Fever, severe headache, neck stiffness, photophobia, vomiting and drowsiness since last night, new non-blanching purple spots, university halls and recent party, unsure of vaccination, not immunosuppressed."
+          ],
+          [
+            "Ask",
+            "Time course, rash, neck stiffness, photophobia, confusion, fits, head injury, ear or sinus infection, travel, contacts, vaccination, immunosuppression, medicines, allergies."
+          ],
+          [
+            "Manage",
+            "Say aloud: sepsis pathway, blood cultures, immediate IV ceftriaxone, fluids, glucose, lactate, senior and critical care review, CT before LP only if indicated, notify public health."
+          ],
+          [
+            "React",
+            "Acknowledge fear, stay calm, do not falsely reassure, say you would ask the senior when unsure."
+          ]
+        ]
+      }
+    ],
+    "ifThisHappens": [
+      {
+        "t": "table",
+        "head": [
+          "Situation",
+          "Good response"
+        ],
+        "rows": [
+          [
+            "Patient becomes drowsier",
+            "Recheck ABCDE and GCS, call critical care, do not delay antibiotics."
+          ],
+          [
+            "Friend is worried about spreading it",
+            "Reassure, explain public health will advise close contacts about preventive antibiotics."
+          ],
+          [
+            "Asked to wait for the scan first",
+            "Explain that antibiotics come first and the scan follows if needed."
+          ]
+        ]
+      }
+    ],
+    "plainLanguage": [
+      {
+        "t": "table",
+        "head": [
+          "Medical term",
+          "Say instead"
+        ],
+        "rows": [
+          [
+            "Meningitis",
+            "Infection of the lining around the brain and spinal cord"
+          ],
+          [
+            "Septicaemia",
+            "Infection in the blood"
+          ],
+          [
+            "Photophobia",
+            "Light hurting the eyes"
+          ],
+          [
+            "Non-blanching rash",
+            "Spots that do not fade when pressed"
+          ],
+          [
+            "Lumbar puncture",
+            "A needle test in the lower back to take fluid"
+          ],
+          [
+            "Prophylaxis",
+            "Preventive antibiotics for close contacts"
+          ]
+        ]
+      }
+    ],
+    "patientQuestions": [
+      {
+        "t": "table",
+        "head": [
+          "Question",
+          "Model reply"
+        ],
+        "rows": [
+          [
+            "Is it meningitis?",
+            "\"It could be. We are treating you straight away without waiting for tests.\""
+          ],
+          [
+            "Am I going to die?",
+            "\"This is serious, and we are acting very quickly, which gives you the best chance.\""
+          ],
+          [
+            "Could I have infected my friends?",
+            "\"Public health will contact close contacts and give preventive advice.\""
+          ],
+          [
+            "Why antibiotics before the scan?",
+            "\"Every hour counts. The scan will not change what we give first.\""
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance."
+      }
+    ],
+    "examinerQuestions": [
+      {
+        "question": "What are your immediate actions?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Sepsis approach: oxygen, IV access, blood cultures, lactate, glucose, fluids.",
+              "Immediate IV ceftriaxone. Do not delay for CT or lumbar puncture.",
+              "Dexamethasone per local guidance, early senior and critical care review, consider aciclovir if encephalitis is possible."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "When must you scan before a lumbar puncture?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Reduced GCS, focal neurology, new seizures, papilloedema, immunocompromise, or signs of raised intracranial pressure.",
+              "Never delay antibiotics. Send blood PCR, and perform the LP when safe."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What does the non-blanching rash suggest?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Meningococcal septicaemia: an emergency.",
+              "Give antibiotics immediately and call for senior help. Use the glass test."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What public health steps are needed?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Notify the local health protection team.",
+              "Close contacts may need preventive antibiotics and vaccination advice.",
+              "Droplet precautions until 24 hours of effective treatment."
+            ]
+          }
+        ]
+      }
+    ],
+    "examinerQuestionPrompts": [
+      {
+        "t": "ol",
+        "items": [
+          "What are your immediate actions?",
+          "When must you scan before a lumbar puncture?",
+          "What does the non-blanching rash suggest?",
+          "What public health steps are needed?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Model answers are in Learning mode.",
+        "muted": true
+      }
+    ],
+    "examinerAnswerTips": [],
+    "redFlags": [
+      {
+        "t": "ul",
+        "items": [
+          "Delaying antibiotics for a scan or lumbar puncture.",
+          "Missing the rash, or not asking about vaccination and contacts.",
+          "No senior escalation or sepsis plan.",
+          "No summary or plan, or jargon without explanation."
+        ]
+      }
+    ],
+    "globalRatingGuide": [],
+    "commonErrors": [],
+    "teachingPoints": [
+      {
+        "t": "ul",
+        "items": [
+          "Antibiotics first, tests second.",
+          "Look for a non-blanching rash.",
+          "Ask about vaccination, living situation and contacts.",
+          "Notify public health."
+        ]
+      }
+    ],
+    "resources": []
+  }
+}

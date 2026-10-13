@@ -1,0 +1,893 @@
+{
+  "slug": "stroke-and-tia",
+  "title": "Stroke and TIA",
+  "specialty": "neurology",
+  "topicGroup": "Stroke and vascular",
+  "summary": "Focused history taking, examiner guidance and timed practice.",
+  "image": "/brand/t1.jpg",
+  "difficulty": "core",
+  "timing": {
+    "readingSeconds": 60,
+    "historySeconds": 480,
+    "examinerSeconds": 120
+  },
+  "totalMarks": 20,
+  "domains": [
+    {
+      "domain": "Introduction and consent",
+      "maxMarks": 2,
+      "descriptor": "Introduces self and role, confirms name and DOB, asks who the relative is, gains consent"
+    },
+    {
+      "domain": "Open questioning",
+      "maxMarks": 2,
+      "descriptor": "Opens with an open question, listens without interrupting, uses a prompt"
+    },
+    {
+      "domain": "Last known well",
+      "maxMarks": 2,
+      "descriptor": "Establishes the time early, from the witness"
+    },
+    {
+      "domain": "Signposting",
+      "maxMarks": 1,
+      "descriptor": "Signals the move to closed questions"
+    },
+    {
+      "domain": "Symptom screen",
+      "maxMarks": 3,
+      "descriptor": "Face, arm, leg, speech, vision, balance, headache, vomiting, seizure, chest pain, neck pain (8 or more = 3; 5 to 7 = 2; 3 to 4 = 1)"
+    },
+    {
+      "domain": "Reperfusion safety screen",
+      "maxMarks": 2,
+      "descriptor": "Anticoagulants and antiplatelets, bleeding, surgery, trauma, previous brain bleed (all = 2; some = 1)"
+    },
+    {
+      "domain": "PMH, drugs, allergies, family",
+      "maxMarks": 2,
+      "descriptor": "Vascular risk factors, previous TIA or stroke, full drug list, allergies, family history"
+    },
+    {
+      "domain": "Social and function",
+      "maxMarks": 1,
+      "descriptor": "Smoking, alcohol, home, baseline function"
+    },
+    {
+      "domain": "Ideas, concerns, expectations",
+      "maxMarks": 1,
+      "descriptor": "Explored for patient and relative"
+    },
+    {
+      "domain": "Summary and plan",
+      "maxMarks": 2,
+      "descriptor": "Accurate summary, checks it, states urgent CT and stroke team"
+    },
+    {
+      "domain": "Communication and empathy",
+      "maxMarks": 2,
+      "descriptor": "Plain language, appropriate pace, acknowledges anxiety"
+    }
+  ],
+  "content": {
+    "aim": [
+      {
+        "t": "p",
+        "text": "Assess focused, patient-centred history taking in a time-critical presentation of suspected stroke, including collateral history from a relative."
+      },
+      {
+        "t": "p",
+        "text": "The candidate should:"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "Open with an open question, then move to closed questions.",
+          "Establish the <b>time last known well</b> from a witness, early.",
+          "Cover stroke symptoms and consider mimics.",
+          "Screen for thrombolysis and thrombectomy safety (anticoagulants, bleeding, surgery, trauma).",
+          "Establish premorbid function, explore concerns, and summarise with a plan."
+        ]
+      }
+    ],
+    "candidateInstructions": [
+      {
+        "t": "p",
+        "text": "You are the emergency department doctor. Mr David Okafor, 66, has arrived in Resus by ambulance."
+      },
+      {
+        "t": "p",
+        "text": "Paramedic handover: glucose 6.8 mmol/L, BP 168/94, HR 92 irregular, SpO2 97% on air, GCS 15."
+      },
+      {
+        "t": "p",
+        "text": "Take a focused history from the patient and his wife. <b>Do not examine.</b> At the end, summarise and state your initial plan."
+      }
+    ],
+    "actorBriefs": [
+      {
+        "title": "Actor brief: patient, Mr David Okafor",
+        "blocks": [
+          {
+            "t": "p",
+            "text": "<b>Manner:</b> calm but frightened, mildly slurred speech."
+          },
+          {
+            "t": "p",
+            "text": "<b>Only after an open question:</b> \"I was having breakfast and my mouth felt strange. I dropped my cup, then my left arm went heavy. My speech feels funny too.\" After \"anything else?\": \"My vision is a bit blurry on the left.\""
+          },
+          {
+            "t": "table",
+            "head": [
+              "Topic",
+              "Response"
+            ],
+            "rows": [
+              [
+                "Onset",
+                "Sudden, about 08:40, slowly worsening"
+              ],
+              [
+                "Symptoms",
+                "Left face droop, left arm heavy, left leg a little weak, slurred speech, left blurred vision"
+              ],
+              [
+                "Denies",
+                "Headache, vomiting, double vision, dizziness, seizure, blackout, chest pain, palpitations, neck pain or injury"
+              ],
+              [
+                "Previous episodes",
+                "None"
+              ],
+              [
+                "PMH",
+                "Hypertension, type 2 diabetes. One fainting episode last year, \"nothing found\""
+              ],
+              [
+                "Drugs",
+                "Aspirin 75 mg, metformin, amlodipine, atorvastatin. <b>No anticoagulants.</b> No allergies"
+              ],
+              [
+                "Bleeding risk",
+                "No surgery, trauma, bleeding, black stools or dental work in 3 months. No brain bleed or aneurysm"
+              ],
+              [
+                "Family",
+                "Father had a stroke at 70"
+              ],
+              [
+                "Social",
+                "Ex-smoker (10 years), a few beers at weekends. Lives with wife, drives, gardens, fully independent"
+              ],
+              [
+                "Concerns (if asked)",
+                "\"I think it's a stroke like my dad.\" \"Will I get my arm back? I don't want to be a burden.\""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Actor brief: wife, Mrs Grace Okafor",
+        "blocks": [
+          {
+            "t": "ul",
+            "items": [
+              "Anxious, speaks quickly, stays close to her husband.",
+              "He was <b>completely well at 08:30</b> at breakfast. His face drooped about ten minutes later. She rang 999 at 08:50.",
+              "His speech is \"a bit worse\" since.",
+              "Mentions last year's fainting episode only if asked about past history.",
+              "If not reassured: \"Is he going to die?\""
+            ]
+          }
+        ]
+      }
+    ],
+    "modelInteraction": [
+      {
+        "title": "Introduction and consent",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Hello, I'm Dr Shah, one of the emergency doctors. Can you tell me your full name and date of birth?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "David Okafor, 4th March 1960."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you, David. And you are?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "Grace, his wife."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I'd like to ask about this morning, and then we'll move quickly with tests. Is that alright with you both?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Yes, of course."
+          }
+        ]
+      },
+      {
+        "title": "Open question and active listening",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Could you tell me what has been happening this morning, in your own words?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I was having breakfast and my mouth felt strange. I dropped my cup, and then my left arm went heavy. My speech feels funny too."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. Take your time. Is there anything else you've noticed?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My vision is a bit blurry on the left side. That's all."
+          }
+        ]
+      },
+      {
+        "title": "Collateral history and time last known well",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Grace, were you with David when this started? When was he last completely well, with no symptoms at all?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "He was normal at 08:30. About ten minutes later his face drooped. I rang 999 at 08:50."
+          },
+          {
+            "kind": "callout",
+            "text": "Last known well: 08:30. This is the key time for treatment decisions."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "That's very helpful. Has anything got better or worse since?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "His speech is a little worse, I think."
+          }
+        ]
+      },
+      {
+        "title": "Signpost, then focused closed questions",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I'm going to ask some specific questions now, so short answers are fine. Any headache?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any vomiting, double vision, dizziness or problems with balance?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No double vision. No dizziness."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any fit, blackout, chest pain or palpitations?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any neck pain, or a recent neck injury or fall?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Have you ever had anything like this before, even a short episode that passed?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Never."
+          }
+        ]
+      },
+      {
+        "title": "Safety screen for reperfusion treatment",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Which medicines do you take?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Aspirin 75, metformin, amlodipine and a statin."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any other blood thinners, such as warfarin, apixaban, rivaroxaban or edoxaban? Any allergies?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No blood thinners, only the aspirin. No allergies."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "In the last three months, any surgery, injuries, falls, bleeding, black stools or dental extractions?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "None."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Have you ever had bleeding in the brain, or been told you have an aneurysm?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No."
+          }
+        ]
+      },
+      {
+        "title": "Background history",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Do you have any medical conditions? Any heart problems, such as an irregular heartbeat?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "High blood pressure and diabetes. Nothing with my heart that I know of."
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "He fainted last year. The hospital checked him but found nothing."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you, Grace, that's useful. Does anyone in the family have strokes or heart disease? Do you smoke or drink?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My father had a stroke at 70. I stopped smoking ten years ago, and I have a few beers at weekends."
+          }
+        ]
+      },
+      {
+        "title": "Premorbid function and social history",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Before this morning, what could you do for yourself day to day? Who is at home with you?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "Everything. He drives, does the gardening, looks after himself completely."
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Just Grace and me at home."
+          }
+        ]
+      },
+      {
+        "title": "Ideas, concerns and expectations",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "David, what do you think might be happening? What is worrying you most?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I think it might be a stroke, like my dad. Will I get my arm back? I don't want to be a burden."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I understand. Grace, is there anything you are worried about?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Wife",
+            "text": "Is he going to die?"
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I understand why you're frightened. David is stable at the moment, and we are acting quickly, which gives him the best chance. I'll keep you both updated at every step."
+          }
+        ]
+      },
+      {
+        "title": "Summary and initial plan",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Let me summarise, and please correct me. David, you've had sudden left-sided weakness, slurred speech and blurry vision on the left, starting about 08:40. You were last completely well at 08:30. You take aspirin but no other blood thinners, you have high blood pressure and diabetes, and you were fully independent before today. Is that right?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Yes."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "This could be a problem with the blood supply to part of the brain, so I'm arranging an urgent CT scan of your head, a heart tracing and blood tests, and the stroke team is being alerted so they can see you straight away. Do you have any questions?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No. Thank you, doctor."
+          }
+        ]
+      }
+    ],
+    "examinerExpectations": [
+      {
+        "t": "table",
+        "head": [
+          "Task",
+          "Expected in this station"
+        ],
+        "rows": [
+          [
+            "Do",
+            "Introduce yourself, check name and date of birth, gain consent, start with an open question, listen without interrupting, signpost, summarise, state a plan."
+          ],
+          [
+            "Find",
+            "Last well 08:30. Left face droop, left arm and leg weakness, slurred speech, blurred left vision. High blood pressure, diabetes, possible irregular heartbeat (fainting last year). Aspirin only, no blood thinners. Fully independent before."
+          ],
+          [
+            "Ask",
+            "Collateral from the wife. Headache, vomiting, fit, blackout, chest pain, neck pain. Previous episodes. Bleeding or surgery in 3 months. Allergies, family history, smoking, alcohol, daily function, worries."
+          ],
+          [
+            "Manage",
+            "Say aloud: check glucose, ABCDE, urgent CT head with CT angiogram, ECG, bloods with clotting, IV access, alert the stroke team, monitor, nothing to eat or drink until a swallow check."
+          ],
+          [
+            "React",
+            "Acknowledge fear, stay calm, correct mistakes openly, say \"I would ask the stroke consultant\" when unsure, restate the time if anything changes."
+          ]
+        ]
+      }
+    ],
+    "ifThisHappens": [
+      {
+        "t": "table",
+        "head": [
+          "Situation",
+          "Good response"
+        ],
+        "rows": [
+          [
+            "Speech gets worse",
+            "Recheck ABCDE and glucose, tell the stroke team now, note the time."
+          ],
+          [
+            "Vomiting or a fit",
+            "Protect the airway, call for help, follow the seizure protocol, repeat glucose."
+          ],
+          [
+            "Wife is tearful",
+            "Pause, acknowledge, offer a seat and a nurse, then carry on."
+          ],
+          [
+            "Patient cannot answer",
+            "Use the wife and short yes or no questions."
+          ],
+          [
+            "Time running out",
+            "Go straight to the safety screen and summary."
+          ],
+          [
+            "Unsure of an examiner question",
+            "Say what you know, name the limit, and say you would ask a senior."
+          ]
+        ]
+      }
+    ],
+    "plainLanguage": [
+      {
+        "t": "table",
+        "head": [
+          "Medical term",
+          "Say instead"
+        ],
+        "rows": [
+          [
+            "Stroke",
+            "A problem with the blood supply to part of the brain"
+          ],
+          [
+            "Clot, infarct",
+            "A blockage in a blood vessel"
+          ],
+          [
+            "Haemorrhage",
+            "Bleeding in the brain"
+          ],
+          [
+            "TIA",
+            "A mini-stroke, a short warning episode"
+          ],
+          [
+            "Dysarthria",
+            "Slurred speech"
+          ],
+          [
+            "Dysphasia",
+            "Trouble finding or understanding words"
+          ],
+          [
+            "Hemiparesis",
+            "Weakness down one side"
+          ],
+          [
+            "Facial droop",
+            "One side of the face drooping"
+          ],
+          [
+            "Atrial fibrillation",
+            "An irregular heartbeat"
+          ],
+          [
+            "Anticoagulant",
+            "Blood thinner"
+          ],
+          [
+            "Hypertension",
+            "High blood pressure"
+          ],
+          [
+            "Syncope",
+            "Fainting"
+          ],
+          [
+            "CT scan",
+            "A quick scan that takes pictures of the brain"
+          ],
+          [
+            "Thrombolysis",
+            "A clot-busting drug through a drip"
+          ],
+          [
+            "Thrombectomy",
+            "Removing the clot through a thin tube in an artery"
+          ],
+          [
+            "Nil by mouth",
+            "Nothing to eat or drink for now"
+          ],
+          [
+            "Stroke mimic",
+            "Something else that can look like a stroke"
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Useful phrases: \"last seen completely well\", \"any weakness or numbness?\", \"any trouble speaking or understanding?\", \"any blood thinners?\""
+      }
+    ],
+    "patientQuestions": [
+      {
+        "t": "table",
+        "head": [
+          "Question",
+          "Model reply"
+        ],
+        "rows": [
+          [
+            "Is it a stroke?",
+            "\"It looks likely from what you describe. The scan will confirm it and show us the best treatment.\""
+          ],
+          [
+            "Will I get my arm back?",
+            "\"I can't promise. The sooner we treat this, the better the chance of recovery, and we are moving as fast as we can.\""
+          ],
+          [
+            "Is he going to die?",
+            "\"He is stable at the moment and we are acting quickly. I'll keep you updated at every step.\""
+          ],
+          [
+            "Why did this happen?",
+            "\"High blood pressure, diabetes and an irregular heartbeat can all cause it. Tests will tell us more.\""
+          ],
+          [
+            "Is the treatment risky?",
+            "\"A small number of people get bleeding in the brain. Without treatment the outlook is usually worse. The stroke team will go through it with you.\""
+          ],
+          [
+            "Why can't he eat or drink?",
+            "\"Swallowing can be affected, and food could go down the wrong way. We'll check it first.\""
+          ],
+          [
+            "Can I drive?",
+            "\"Not for now. The stroke team will advise when it is safe, and there are driving rules we'll go through.\""
+          ],
+          [
+            "Can I stay with him?",
+            "\"Yes, for now. A nurse will look after you and update you.\""
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Tips: acknowledge the feeling first, use short sentences, check understanding, never over-promise, avoid false reassurance."
+      }
+    ],
+    "examinerQuestions": [
+      {
+        "question": "Immediate actions and investigations?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "ABCDE, oxygen only if hypoxic.",
+              "Capillary glucose to exclude hypoglycaemia.",
+              "FAST and NIHSS, then alert the stroke team.",
+              "Urgent non-contrast CT head; CT angiography if thrombectomy is considered.",
+              "12-lead ECG for atrial fibrillation; bloods including clotting and group and save; IV access.",
+              "Monitor BP, heart rate, saturations and temperature."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What time windows apply to reperfusion?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Thrombolysis (alteplase or tenecteplase per local protocol): within 4.5 hours of onset, once haemorrhage is excluded.",
+              "Thrombectomy for a large vessel occlusion: generally within 6 hours; selected patients up to 24 hours from last known well, guided by advanced imaging.",
+              "Use the last known well time, not the time symptoms were noticed.",
+              "BP below 185/110 before thrombolysis and below 180/105 after."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Contraindications and cautions for thrombolysis?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Intracranial haemorrhage on CT, previous brain bleed, suspected subarachnoid haemorrhage.",
+              "Recent major surgery or trauma, active internal bleeding, coagulopathy.",
+              "Therapeutic anticoagulation (recent DOAC, raised INR on warfarin).",
+              "Uncontrolled hypertension, glucose outside the safe range, recent stroke or head injury.",
+              "Others per local protocol."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Common stroke mimics?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Hypoglycaemia (check glucose first), seizure with Todd's paresis, migraine with aura.",
+              "Sepsis or delirium, syncope, Bell's palsy, functional neurological disorder.",
+              "Old stroke deficits worsening during infection."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "A TIA with fully resolved symptoms: management?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Aspirin 300 mg immediately once haemorrhage is not suspected.",
+              "Specialist assessment within 24 hours.",
+              "ECG, bloods, glucose, brain and vascular imaging as indicated.",
+              "Secondary prevention (statin, BP control, smoking cessation, antithrombotic therapy) and driving advice."
+            ]
+          }
+        ]
+      }
+    ],
+    "examinerQuestionPrompts": [
+      {
+        "t": "ol",
+        "items": [
+          "What are your immediate actions and investigations?",
+          "What time windows apply to reperfusion treatment?",
+          "What are the contraindications and cautions for thrombolysis?",
+          "What are the common stroke mimics?",
+          "How would you manage a TIA with fully resolved symptoms?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Model answers are in Learning mode.",
+        "muted": true
+      }
+    ],
+    "examinerAnswerTips": [
+      {
+        "t": "ul",
+        "items": [
+          "Say your priority first: \"My immediate priority is...\"",
+          "Use a structure (ABCDE, then investigations, then treatment).",
+          "Give times and numbers: 4.5 hours for thrombolysis, last known well, BP under 185/110.",
+          "Link the answer back to this patient.",
+          "If unsure, say what you know and that you would ask the stroke consultant.",
+          "Keep to the time; stop when the examiner moves on."
+        ]
+      }
+    ],
+    "redFlags": [
+      {
+        "t": "ul",
+        "items": [
+          "No last known well time.",
+          "Giving thrombolysis before a CT.",
+          "Skipping glucose or the blood thinner question.",
+          "False reassurance or firm promises.",
+          "Jargon without explanation, or interrupting the patient.",
+          "No summary or plan."
+        ]
+      }
+    ],
+    "globalRatingGuide": [
+      {
+        "t": "ul",
+        "items": [
+          "<b>Clear pass:</b> structured, time-critical, all key points.",
+          "<b>Pass:</b> most points, minor omissions.",
+          "<b>Borderline:</b> key omission (for example no last known well time) or poor communication.",
+          "<b>Fail:</b> disorganised, unsafe omissions or unprofessional."
+        ]
+      }
+    ],
+    "commonErrors": [
+      {
+        "t": "ul",
+        "items": [
+          "Closed questions only.",
+          "Asking when symptoms were noticed, not when last well.",
+          "Forgetting anticoagulants and bleeding risk.",
+          "Not using the wife's collateral history.",
+          "Naming a firm diagnosis before assessment."
+        ]
+      }
+    ],
+    "teachingPoints": [
+      {
+        "t": "ol",
+        "items": [
+          "<b>Time is brain.</b> Last known well is the most important question.",
+          "<b>Open first, then closed.</b> The funnel captures the patient's story, then fills gaps safely.",
+          "<b>Collateral history</b> is essential when speech or comprehension is affected.",
+          "<b>Check glucose</b> in every suspected stroke.",
+          "<b>Never skip the safety screen</b> for anticoagulants and bleeding risk.",
+          "<b>Premorbid function</b> guides treatment decisions and prognosis.",
+          "Be honest about uncertainty when counselling an anxious patient and relative."
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "t": "ul",
+        "items": [
+          "NICE guideline NG128: Stroke and transient ischaemic attack in over 16s.",
+          "Royal College of Physicians: National Clinical Guideline for Stroke for the UK and Ireland.",
+          "Royal College of Emergency Medicine: current clinical guidance on stroke and TIA.",
+          "Stroke Association patient information."
+        ]
+      }
+    ]
+  }
+}

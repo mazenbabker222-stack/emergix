@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: emergix-academy
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: corepack enable && pnpm install --no-frozen-lockfile --prod=false && PORT=5173 BASE_PATH=/ pnpm --filter @workspace/oscepass run build && pnpm --filter @workspace/api-server run build
+    startCommand: pnpm --filter @workspace/api-server run start
+    healthCheckPath: /api/healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: APP_URL            # https://emergix-academy.onrender.com (أو دومينك)
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_BOOTSTRAP_TOKEN
+        generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: SUPPORT_EMAIL
+        sync: false
+      - key: S3_ENDPOINT
+        sync: false
+      - key: S3_BUCKET
+        sync: false
+      - key: S3_ACCESS_KEY_ID
+        sync: false
+      - key: S3_SECRET_ACCESS_KEY
+        sync: false

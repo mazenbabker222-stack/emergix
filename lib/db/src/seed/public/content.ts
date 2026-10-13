@@ -1,0 +1,293 @@
+/** CMS content for the seed: legal pages, free demo, blog and plans. All of it is SAMPLE/PLACEHOLDER. */
+
+const LEGAL_NOTICE = "**REVIEW BY LEGAL COUNSEL.** This is placeholder text, not a finished legal document.";
+
+export const legalPages = [
+  {
+    slug: "terms",
+    title: "Terms of use",
+    description: "The terms that apply when you use the platform.",
+    body: [
+      LEGAL_NOTICE,
+      "## Using the service",
+      "You may use the platform for your own exam preparation. You must not share your account, copy the content, or resell it.",
+      "## Accounts and access",
+      "You are responsible for keeping your sign-in details safe. We may limit simultaneous sessions to protect content.",
+      "## Content",
+      "Practice questions and stations are provided for learning only. We work to keep them accurate but cannot guarantee they are free of error.",
+      "## Contact",
+      "Questions about these terms: use the [contact form](/contact).",
+    ].join("\n\n"),
+  },
+  {
+    slug: "privacy",
+    title: "Privacy policy",
+    description: "How we collect, use and protect your personal data.",
+    body: [
+      LEGAL_NOTICE,
+      "## What we collect",
+      "Contact form messages (name, email, message) and, once accounts launch, the details you give us when you register and your study activity.",
+      "## Why we collect it",
+      "To reply to you, to run your account and to improve the platform.",
+      "## Your rights",
+      "Under UK GDPR you can ask to see, correct, export or delete your data. Use the [contact form](/contact) to make a request.",
+      "## Processors",
+      "PLACEHOLDER: list hosting, email, analytics and payment providers here.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "cookies",
+    title: "Cookie policy",
+    description: "Which cookies and similar technologies we use, and how to control them.",
+    body: [
+      LEGAL_NOTICE,
+      "## Essential storage",
+      "We store your cookie choice and whether you dismissed an announcement so the site behaves consistently. These are strictly necessary.",
+      "## Analytics",
+      "Analytics only run if you choose **Accept all** in the cookie banner. You can change your choice at any time with **Cookie settings** in the footer.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "refunds",
+    title: "Refund policy",
+    description: "When and how you can ask for a refund.",
+    body: [
+      LEGAL_NOTICE,
+      "## Refund requests",
+      "PLACEHOLDER: the owner must decide the refund window and conditions (for example, a number of days after purchase and a usage limit).",
+      "## How to ask",
+      "Use the [contact form](/contact) with your account email and order details.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "medical-disclaimer",
+    title: "Medical disclaimer",
+    description: "Educational use only: our content is not clinical advice.",
+    body: [
+      LEGAL_NOTICE,
+      "## Educational use only",
+      "All questions, stations, lessons and notes on this platform are for exam preparation. They are **not clinical advice** and must never be used to make decisions about real patients.",
+      "## Clinical guidance",
+      "Always follow current national and local guidelines and the advice of your senior clinicians.",
+      "## Independence",
+      "This platform is not affiliated with or endorsed by the Royal College of Emergency Medicine.",
+    ].join("\n\n"),
+  },
+];
+
+/** Structured content for /free-demo. SAMPLE only; keys are stable so the admin editor can reuse them. */
+export const freeDemo = {
+  slug: "free-demo",
+  title: "Free demo",
+  description: "Try sample exam-style questions and a short lesson, no account needed.",
+  body: "Sample content for demonstration only. Not clinical advice.",
+  data: {
+    questions: [
+      {
+        id: "demo-1",
+        stem: "A 32-year-old woman develops facial swelling, wheeze and hypotension minutes after a wasp sting. What is the most appropriate immediate treatment?",
+        options: [
+          { key: "A", text: "Intramuscular adrenaline", rationale: "Correct. Intramuscular adrenaline is the first-line treatment for anaphylaxis." },
+          { key: "B", text: "Intravenous hydrocortisone", rationale: "Steroids are not first-line and do not treat the immediate life threat." },
+          { key: "C", text: "Oral chlorphenamine", rationale: "Antihistamines relieve skin symptoms but do not treat airway or circulation compromise." },
+          { key: "D", text: "Nebulised salbutamol", rationale: "May help bronchospasm but does not treat anaphylaxis as a whole." },
+          { key: "E", text: "Observation and repeat review", rationale: "Delay is dangerous: treat immediately." },
+        ],
+        correct: "A",
+        keyPoint: "Anaphylaxis: give intramuscular adrenaline early.",
+      },
+      {
+        id: "demo-2",
+        stem: "A man is acutely short of breath after a stab wound to the chest. He is hypotensive, has distended neck veins, absent breath sounds on the right and tracheal deviation to the left. What is the most appropriate next step?",
+        options: [
+          { key: "A", text: "Request a chest X-ray", rationale: "Imaging delays life-saving treatment in a tension pneumothorax." },
+          { key: "B", text: "Immediate decompression of the right chest", rationale: "Correct. This is a clinical diagnosis that needs immediate decompression." },
+          { key: "C", text: "Intravenous antibiotics", rationale: "Not the immediate priority." },
+          { key: "D", text: "Pericardiocentesis", rationale: "The picture points to tension pneumothorax, not tamponade." },
+          { key: "E", text: "CT of the chest", rationale: "Not safe in an unstable patient." },
+        ],
+        correct: "B",
+        keyPoint: "Tension pneumothorax is diagnosed clinically and treated immediately.",
+      },
+      {
+        id: "demo-3",
+        stem: "A patient with renal failure has a potassium of 7.4 mmol/L and peaked T waves with a widened QRS on the ECG. Which treatment should be given first?",
+        options: [
+          { key: "A", text: "Intravenous insulin with glucose", rationale: "Shifts potassium into cells but does not protect the heart immediately." },
+          { key: "B", text: "Nebulised salbutamol", rationale: "A useful adjunct, not the first step when the ECG is abnormal." },
+          { key: "C", text: "Intravenous calcium", rationale: "Correct. Calcium stabilises the myocardial membrane and protects against arrhythmia." },
+          { key: "D", text: "Oral calcium resonium", rationale: "Too slow for an emergency." },
+          { key: "E", text: "Intravenous sodium bicarbonate routinely", rationale: "Not routine first-line treatment." },
+        ],
+        correct: "C",
+        keyPoint: "Protect the heart first with intravenous calcium, then lower potassium.",
+      },
+      {
+        id: "demo-4",
+        stem: "A young man is found unresponsive with a respiratory rate of 6 per minute and pinpoint pupils. What is the most appropriate treatment?",
+        options: [
+          { key: "A", text: "Flumazenil", rationale: "Reverses benzodiazepines, not opioids." },
+          { key: "B", text: "Naloxone", rationale: "Correct. The picture suggests opioid toxicity; naloxone reverses it." },
+          { key: "C", text: "Activated charcoal", rationale: "Unsafe with a reduced airway reflex." },
+          { key: "D", text: "Intravenous glucose only", rationale: "Check glucose, but this does not explain the picture." },
+          { key: "E", text: "Atropine", rationale: "Used for cholinergic toxicity, which gives a different picture." },
+        ],
+        correct: "B",
+        keyPoint: "Respiratory depression with pinpoint pupils: think opioids and give naloxone.",
+      },
+      {
+        id: "demo-5",
+        stem: "A 58-year-old has chest pain and ST elevation in the anterior leads. A primary PCI centre is 45 minutes away. Which is the most appropriate definitive reperfusion strategy?",
+        options: [
+          { key: "A", text: "Discharge with outpatient follow-up", rationale: "Unsafe." },
+          { key: "B", text: "Delayed angiography next week", rationale: "Too late for reperfusion benefit." },
+          { key: "C", text: "Transfer for primary percutaneous coronary intervention", rationale: "Correct when it can be delivered within the recommended time frame." },
+          { key: "D", text: "Intravenous heparin alone", rationale: "An adjunct only, not definitive reperfusion." },
+          { key: "E", text: "Oral beta blocker only", rationale: "Not definitive reperfusion." },
+        ],
+        correct: "C",
+        keyPoint: "STEMI needs prompt reperfusion; local protocols set the time targets.",
+      },
+    ],
+    lesson: {
+      title: "A structured approach to the sick patient",
+      body: [
+        "*Sample lesson for demonstration. Not clinical advice.*",
+        "## Why a structure helps",
+        "Under pressure, a fixed order protects you from missing the thing that kills first. The ABCDE approach gives that order.",
+        "## The steps",
+        "- **A**irway: is it open and protected?",
+        "- **B**reathing: rate, effort, oxygenation, chest examination.",
+        "- **C**irculation: pulse, blood pressure, perfusion, access.",
+        "- **D**isability: level of consciousness, pupils, glucose.",
+        "- **E**xposure: examine fully, keep the patient warm.",
+        "## Reassess",
+        "Treat problems as you find them, then go back to **A** and reassess after every intervention.",
+      ].join("\n\n"),
+    },
+  },
+};
+
+export const blogPosts = [
+  {
+    slug: "how-to-structure-sba-revision",
+    title: "How to structure your SBA revision",
+    excerpt: "A simple weekly rhythm for mixing topic practice, timed papers and review.",
+    tags: ["SBA", "Study skills"],
+    publishedAt: "2026-09-15T09:00:00Z",
+    body: [
+      "*Sample article. Replace with your own content.*",
+      "## Start with topics",
+      "Begin with short topic blocks so weak areas show up early.",
+      "## Add timed papers",
+      "Once a week, sit a longer timed block to practise pacing.",
+      "## Review properly",
+      "- Read every explanation, including the options you got right.",
+      "- Write one line for each mistake.",
+      "- Revisit those notes after a few days.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "getting-more-from-osce-practice",
+    title: "Getting more from OSCE practice",
+    excerpt: "Why saying it out loud, against a timer, beats reading a mark scheme.",
+    tags: ["OSCE", "Study skills"],
+    publishedAt: "2026-09-29T09:00:00Z",
+    body: [
+      "*Sample article. Replace with your own content.*",
+      "## Practise out loud",
+      "Talk through each station with a colleague. Fluency comes from speaking, not reading.",
+      "## Use the clock",
+      "Time every attempt so the real station feels familiar.",
+      "## Get feedback",
+      "Ask your partner to score you against the marking domains, then swap roles.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "reading-the-exam-formats",
+    title: "Reading the exam formats before you plan",
+    excerpt: "Know the structure of each exam, then build your plan around it.",
+    tags: ["Exams"],
+    publishedAt: "2026-10-06T09:00:00Z",
+    body: [
+      "*Sample article. Replace with your own content.*",
+      "## Know the structure",
+      "The Primary and SBA exams are written; the OSCE is a circuit of timed stations. Each rewards a different kind of practice.",
+      "## Check the source",
+      "Always confirm details on the [official exam page](https://rcem.ac.uk/) and see our [exam pages](/exams) for an overview.",
+    ].join("\n\n"),
+  },
+];
+
+const ms = (key: string, label: string, months: number, amountMinor: number) => ({ key, label, intervalMonths: months, amountMinor });
+
+export const plans = [
+  {
+    slug: "free",
+    name: "Free",
+    exam: null as string | null,
+    description: "Try the platform before you commit.",
+    features: ["Free demo questions", "One sample lesson"],
+    isFeatured: false,
+    sortOrder: 10,
+    prices: [ms("free-0", "Free", 0, 0)],
+  },
+  {
+    slug: "primary-pass",
+    name: "Primary Pass",
+    exam: "mrcem-primary",
+    description: "Everything for the MRCEM Primary exam.",
+    features: ["Free demo questions", "Full Primary question bank", "Timed mock papers", "Performance analytics"],
+    isFeatured: false,
+    sortOrder: 20,
+    prices: [ms("primary-1", "1 month", 1, 1900), ms("primary-3", "3 months", 3, 4900), ms("primary-6", "6 months", 6, 7900)],
+  },
+  {
+    slug: "sba-pass",
+    name: "SBA Pass",
+    exam: "mrcem-sba",
+    description: "Everything for the MRCEM SBA exam.",
+    features: ["Free demo questions", "Full SBA question bank", "Timed mock papers", "Two-section mock with break", "Performance analytics"],
+    isFeatured: false,
+    sortOrder: 30,
+    prices: [ms("sba-1", "1 month", 1, 1900), ms("sba-3", "3 months", 3, 4900), ms("sba-6", "6 months", 6, 7900)],
+  },
+  {
+    slug: "osce-pass",
+    name: "OSCE Pass",
+    exam: "mrcem-osce",
+    description: "Everything for the MRCEM OSCE exam.",
+    features: ["Free demo questions", "OSCE station library", "Station timers and marking sheets", "Examiner view"],
+    isFeatured: false,
+    sortOrder: 40,
+    prices: [ms("osce-1", "1 month", 1, 1900), ms("osce-3", "3 months", 3, 4900), ms("osce-6", "6 months", 6, 7900)],
+  },
+  {
+    slug: "all-access",
+    name: "All-access",
+    exam: null as string | null,
+    description: "Every exam, every feature, one price.",
+    features: [
+      "Free demo questions",
+      "Full Primary question bank",
+      "Full SBA question bank",
+      "Timed mock papers",
+      "Two-section mock with break",
+      "Performance analytics",
+      "OSCE station library",
+      "Station timers and marking sheets",
+      "Examiner view",
+    ],
+    isFeatured: true,
+    sortOrder: 50,
+    prices: [ms("all-1", "1 month", 1, 3900), ms("all-3", "3 months", 3, 9900), ms("all-6", "6 months", 6, 15900), ms("all-12", "12 months", 12, 24900)],
+  },
+];
+
+export const banner = {
+  key: "placeholder-notice",
+  message: "Exam dates, fees and prices on this site are PLACEHOLDERS until confirmed. Always check the official college website.",
+  linkUrl: "/calendar",
+  linkLabel: "See the exam calendar",
+  variant: "warning" as const,
+};

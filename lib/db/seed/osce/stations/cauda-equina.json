@@ -1,0 +1,611 @@
+{
+  "slug": "cauda-equina",
+  "title": "Cauda equina syndrome",
+  "specialty": "neurology",
+  "topicGroup": "Weakness and spinal",
+  "summary": "A sensitive red-flag history with a clear emergency plan.",
+  "image": "/brand/t3.jpg",
+  "difficulty": "advanced",
+  "timing": {
+    "readingSeconds": 60,
+    "historySeconds": 480,
+    "examinerSeconds": 120
+  },
+  "totalMarks": 20,
+  "domains": [
+    {
+      "domain": "Introduction, consent, privacy and chaperone offer",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Open question and prompt",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Saddle numbness asked and located",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Bladder symptoms",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Bowel and sexual function, asked sensitively",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Leg pain, weakness and numbness",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Other red flags",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "PMH, drugs, allergies, social and work",
+      "maxMarks": 1,
+      "descriptor": ""
+    },
+    {
+      "domain": "Ideas, concerns, expectations",
+      "maxMarks": 1,
+      "descriptor": ""
+    },
+    {
+      "domain": "Summary and plan",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Communication and sensitivity",
+      "maxMarks": 2,
+      "descriptor": ""
+    }
+  ],
+  "content": {
+    "aim": [
+      {
+        "t": "p",
+        "text": "Assess a sensitive, focused history in a patient with back pain and possible cauda equina syndrome, a surgical emergency where speed protects bladder, bowel and sexual function."
+      },
+      {
+        "t": "ul",
+        "items": [
+          "Open with an open question, then use focused closed questions.",
+          "Ask about saddle numbness, bladder, bowel and sexual function, sensitively and in private.",
+          "Cover leg symptoms and other red flags.",
+          "Explain the urgency in plain language and state a plan: urgent MRI and early spinal team involvement."
+        ]
+      }
+    ],
+    "candidateInstructions": [
+      {
+        "t": "p",
+        "text": "You are the emergency department doctor. Mr Daniel Reid, 42, has come to the department with back pain. Observations are normal. Take a focused history. <b>Do not examine.</b> At the end, summarise and state your initial plan."
+      }
+    ],
+    "actorBriefs": [
+      {
+        "title": "Actor brief: patient, Mr Daniel Reid",
+        "blocks": [
+          {
+            "t": "p",
+            "text": "<b>Manner:</b> worried, a little embarrassed about bladder and bowel questions."
+          },
+          {
+            "t": "p",
+            "text": "<b>After an open question:</b> \"I hurt my back lifting boxes five days ago. Now it's down both legs, and I'm struggling to pass water.\" After \"anything else?\": \"My right foot keeps catching, and I feel numb in a weird place.\""
+          },
+          {
+            "t": "ul",
+            "items": [
+              "Back pain from lifting five days ago. Pain down both legs for two days, right worse. Right foot catching, no falls.",
+              "Since yesterday: numb around the back passage and inner thighs, can't feel toilet paper properly.",
+              "Bladder: hard to start, does not feel when full, dribbled this morning.",
+              "Bowels: constipated, did not feel the stool pass. Erections harder since yesterday (only if asked sensitively).",
+              "No fever, weight loss, cancer, IV drug use, recent infection or procedure, steroids or blood thinners. Only the lifting injury.",
+              "PMH: earlier back pain episodes, nothing serious. Takes ibuprofen and codeine. No allergies. Smokes 10 a day. Warehouse worker, lives with his partner.",
+              "Concerns (if asked): \"Will I be paralysed? Will I work again? I can't cope with being incontinent.\""
+            ]
+          }
+        ]
+      }
+    ],
+    "modelInteraction": [
+      {
+        "title": "Introduction, consent and privacy",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Hello, I'm Dr Shah, one of the emergency doctors. Can you confirm your full name and date of birth?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Daniel Reid, 12th June 1984."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. I'll need to ask some personal questions about your bladder and bowels. Are you comfortable here, or would you like more privacy or a chaperone?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Here is fine."
+          }
+        ]
+      },
+      {
+        "title": "Open question",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Could you tell me what has been happening, in your own words?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I hurt my back lifting boxes five days ago. Now it's down both legs, and I'm struggling to pass water."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. Is there anything else you've noticed?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My right foot keeps catching, and I feel numb in a weird place."
+          }
+        ]
+      },
+      {
+        "title": "Saddle numbness",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "I'm going to ask some specific questions now. Where exactly is the numbness? Is it around your back passage, genitals or inner thighs, the area that would touch a saddle?"
+          },
+          {
+            "kind": "callout",
+            "text": "Key finding: saddle numbness since yesterday."
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Yes, since yesterday. When I wipe, I can't feel it properly."
+          }
+        ]
+      },
+      {
+        "title": "Bladder, bowel and sexual function",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Is it hard to start passing urine? Can you feel when your bladder is full? Any leaking?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Hard to start, I don't feel it's full, and I dribbled this morning."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "What about your bowels?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Constipated, and I didn't feel it when I went."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "This next question is sensitive, but important. Any change in erections or sexual function?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Yes, harder since yesterday."
+          }
+        ]
+      },
+      {
+        "title": "Legs and other red flags",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Is the leg pain in one leg or both? Any weakness, numbness or falls?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Both, the right is worse. My foot catches. No falls."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any fever, weight loss, history of cancer, injecting drugs, recent infection or procedure, steroids or blood thinners?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "None of those."
+          }
+        ]
+      },
+      {
+        "title": "Background and social",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Have you had back problems before? What medicines do you take? Any allergies? What do you do for work, and who is at home?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Some back aches before, nothing serious. Ibuprofen and codeine, no allergies. I work in a warehouse and live with my partner. I smoke ten a day."
+          }
+        ]
+      },
+      {
+        "title": "Ideas, concerns and expectations",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "What is worrying you most?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Will I be paralysed? Will I work again? I can't cope with being incontinent."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Those are understandable worries. This is why we are acting quickly, because treating pressure on the nerves early gives the best chance of recovery."
+          }
+        ]
+      },
+      {
+        "title": "Summary and plan",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Let me summarise. Daniel, you hurt your back five days ago, and now have pain down both legs, a right foot that catches, numbness around your back passage, trouble passing urine, reduced bowel sensation and a change in sexual function. I'm worried this could be pressure on the bundle of nerves at the bottom of the spine, called cauda equina syndrome. It is an emergency. I'm arranging a bladder scan and an urgent MRI of your spine, and calling the spinal team now. I'll also examine you, including checking feeling and muscle tone around the back passage, with a chaperone. Is that alright?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Yes. Thank you."
+          }
+        ]
+      }
+    ],
+    "examinerExpectations": [
+      {
+        "t": "table",
+        "head": [
+          "Task",
+          "Expected in this station"
+        ],
+        "rows": [
+          [
+            "Do",
+            "Introduce yourself, check name and date of birth, offer privacy and a chaperone, start with an open question, ask sensitive questions kindly, signpost, summarise, state a plan."
+          ],
+          [
+            "Find",
+            "Five days of back pain after lifting, now bilateral leg pain (right worse), right foot catching, saddle numbness since yesterday, hesitancy and reduced bladder sensation, reduced bowel sensation, new sexual dysfunction, no other red flags."
+          ],
+          [
+            "Ask",
+            "Saddle sensation, bladder, bowel and sexual function, leg weakness, fever, cancer, injecting drug use, trauma, steroids, blood thinners, previous back problems, work and home, worries."
+          ],
+          [
+            "Manage",
+            "Say aloud: urgent senior and spinal team review, examination with chaperone including anal tone, bladder scan, emergency MRI spine, bloods, analgesia, baseline neurology, nil by mouth."
+          ],
+          [
+            "React",
+            "Acknowledge embarrassment and fear, stay calm, do not falsely reassure, say you would ask the senior when unsure."
+          ]
+        ]
+      }
+    ],
+    "ifThisHappens": [
+      {
+        "t": "table",
+        "head": [
+          "Situation",
+          "Good response"
+        ],
+        "rows": [
+          [
+            "Patient is embarrassed",
+            "Pause, normalise the questions, offer privacy again, then continue."
+          ],
+          [
+            "Patient asks to go home",
+            "Explain the risk clearly, say you want him to stay for urgent scans, involve the senior."
+          ],
+          [
+            "Leg weakness gets worse",
+            "Tell the spinal team now, repeat the neurological check, note the time."
+          ],
+          [
+            "Patient cannot feel his bladder",
+            "Arrange a bladder scan without delay."
+          ],
+          [
+            "Time running out",
+            "Go straight to red flags and the summary with a plan."
+          ],
+          [
+            "Unsure of an examiner question",
+            "Say what you know, name the limit, and say you would ask a senior."
+          ]
+        ]
+      }
+    ],
+    "plainLanguage": [
+      {
+        "t": "table",
+        "head": [
+          "Medical term",
+          "Say instead"
+        ],
+        "rows": [
+          [
+            "Cauda equina",
+            "The bundle of nerves at the bottom of the spinal canal"
+          ],
+          [
+            "Saddle anaesthesia",
+            "Numbness around the back passage, genitals and inner thighs, where a saddle would touch"
+          ],
+          [
+            "Urinary retention",
+            "Not being able to empty your bladder"
+          ],
+          [
+            "Radiculopathy",
+            "Nerve pain shooting down the leg"
+          ],
+          [
+            "Foot drop",
+            "Your foot catching or dragging"
+          ],
+          [
+            "MRI",
+            "A detailed scan with a magnet, no radiation"
+          ],
+          [
+            "Bladder scan",
+            "A painless scan to see how much urine is in the bladder"
+          ],
+          [
+            "Catheter",
+            "A thin tube to drain the bladder"
+          ],
+          [
+            "Decompression",
+            "An operation to take pressure off the nerves"
+          ],
+          [
+            "Erectile dysfunction",
+            "Changes in erections or sexual function"
+          ]
+        ]
+      }
+    ],
+    "patientQuestions": [
+      {
+        "t": "table",
+        "head": [
+          "Question",
+          "Model reply"
+        ],
+        "rows": [
+          [
+            "Will I be paralysed?",
+            "\"I cannot promise, but this is exactly why we are acting so fast. Relieving pressure on the nerves early gives the best chance.\""
+          ],
+          [
+            "Will my bladder recover?",
+            "\"It depends on how long the nerves have been squeezed and how quickly we relieve it. That is why speed matters.\""
+          ],
+          [
+            "Do I need an operation?",
+            "\"Possibly. The scan will show. If a disc is pressing on the nerves, urgent surgery is often needed.\""
+          ],
+          [
+            "Can I go home with painkillers?",
+            "\"I am worried about you, so I want you to stay for an urgent scan and the spinal team.\""
+          ],
+          [
+            "Why the back passage examination?",
+            "\"It checks the nerves there. A chaperone will be present, and you can ask me to stop at any time.\""
+          ],
+          [
+            "Will I work again?",
+            "\"Let us focus on treatment first. We will talk about recovery and work afterwards.\""
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance."
+      }
+    ],
+    "examinerQuestions": [
+      {
+        "question": "What are your immediate actions and investigations?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Recognise a surgical emergency and escalate early to the senior and the on-call spinal or neurosurgical team.",
+              "Examine: leg power, tone, reflexes, sensation, saddle sensation, and with a chaperone anal tone and sensation.",
+              "Bladder scan for post-void residual volume.",
+              "Emergency MRI of the spine.",
+              "Bloods, analgesia, document a baseline neurological state, repeat observations, nil by mouth in case of surgery."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What are the common causes?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Large central lumbar disc prolapse (most common).",
+              "Spinal stenosis.",
+              "Tumour or metastases.",
+              "Epidural abscess or haematoma.",
+              "Trauma or fracture."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Which back pain red flags need urgent action?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Saddle numbness, new bladder or bowel dysfunction, sexual dysfunction, bilateral or progressive leg weakness: emergency.",
+              "Also needing prompt work-up: cancer history, fever, injecting drug use, steroids, trauma, age under 20 or over 50, weight loss, night pain."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What is the difference between incomplete and retention types?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Incomplete: altered urinary sensation or stream, may still pass urine.",
+              "Retention: painless urinary retention with overflow, with a worse outlook.",
+              "Both are urgent. The aim is to decompress before retention develops."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Why does timing matter?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Recovery of bladder, bowel and sexual function depends on how early pressure is relieved.",
+              "Delay risks permanent deficits, so MRI and surgery should happen as soon as possible, following the local spinal pathway."
+            ]
+          }
+        ]
+      }
+    ],
+    "examinerQuestionPrompts": [
+      {
+        "t": "ol",
+        "items": [
+          "What are your immediate actions and investigations?",
+          "What are the common causes?",
+          "Which back pain red flags need urgent action?",
+          "What is the difference between incomplete and retention types?",
+          "Why does timing matter?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Model answers are in Learning mode.",
+        "muted": true
+      }
+    ],
+    "examinerAnswerTips": [
+      {
+        "t": "ul",
+        "items": [
+          "Say your priority first.",
+          "Use a structure: examine, investigate, escalate.",
+          "Link answers to this patient.",
+          "If unsure, say so and say you would ask a senior."
+        ]
+      }
+    ],
+    "redFlags": [
+      {
+        "t": "ul",
+        "items": [
+          "Not asking about saddle numbness or bladder and bowel function.",
+          "No privacy or sensitivity.",
+          "Reassuring and discharging on painkillers.",
+          "No escalation or MRI plan.",
+          "Jargon without explanation."
+        ]
+      }
+    ],
+    "globalRatingGuide": [],
+    "commonErrors": [],
+    "teachingPoints": [
+      {
+        "t": "ol",
+        "items": [
+          "<b>Ask about saddle numbness and bladder and bowel function</b> in every back pain history.",
+          "Create privacy and ask sensitively.",
+          "Early symptoms can be subtle: altered sensation, hesitancy, not just retention.",
+          "It is an emergency: early MRI and spinal team.",
+          "Never reassure falsely or discharge on painkillers when red flags are present.",
+          "Document a clear neurological baseline."
+        ]
+      }
+    ],
+    "resources": []
+  }
+}

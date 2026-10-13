@@ -1,0 +1,458 @@
+{
+  "slug": "first-seizure",
+  "title": "First seizure",
+  "specialty": "neurology",
+  "topicGroup": "Seizures",
+  "summary": "Explore a first seizure, witness history and immediate priorities.",
+  "image": "/brand/t4.jpg",
+  "difficulty": "foundation",
+  "timing": {
+    "readingSeconds": 60,
+    "historySeconds": 480,
+    "examinerSeconds": 120
+  },
+  "totalMarks": 20,
+  "domains": [
+    {
+      "domain": "Introduction, consent and ID check",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Open question and prompt",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Onset, timing and course",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Focused symptom screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "Red flags and risk screen",
+      "maxMarks": 3,
+      "descriptor": ""
+    },
+    {
+      "domain": "PMH, drugs, allergies, family, social",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Ideas, concerns, expectations",
+      "maxMarks": 1,
+      "descriptor": ""
+    },
+    {
+      "domain": "Summary and plan",
+      "maxMarks": 2,
+      "descriptor": ""
+    },
+    {
+      "domain": "Communication and empathy",
+      "maxMarks": 2,
+      "descriptor": ""
+    }
+  ],
+  "content": {
+    "aim": [
+      {
+        "t": "p",
+        "text": "Assess history taking after a first seizure, using a witness account to separate seizure from syncope and other mimics, and giving safe advice."
+      }
+    ],
+    "candidateInstructions": [
+      {
+        "t": "p",
+        "text": "You are the emergency doctor. Mr Tom Walker, 24, was brought in by ambulance after a collapse at work. He is now alert, observations are normal and glucose is 5.9. His colleague Anna saw the event and is with him. Take a focused history from both. <b>Do not examine.</b> At the end, summarise and state your initial plan."
+      }
+    ],
+    "actorBriefs": [
+      {
+        "title": "Actor brief",
+        "blocks": [
+          {
+            "t": "ul",
+            "items": [
+              "Tom: felt odd (rising feeling in the stomach, strange smell), then woke on the floor with a sore tongue and wet trousers. Headache and aching since.",
+              "Anna: he went stiff, then jerked all over for about two minutes, eyes open, lips blue, did not respond. Bit the side of his tongue. Confused for about 20 minutes. Did not hit his head hard.",
+              "No fever or neck stiffness. Three hours of sleep and heavy drinking the night before.",
+              "No previous seizures, jerks or blank spells. No drugs, medicines or allergies. No family history.",
+              "Office worker, lives with flatmates, drives to work, plays football.",
+              "Concern if asked: \"Do I have epilepsy? Can I still drive? Will it happen again?\""
+            ]
+          }
+        ]
+      }
+    ],
+    "modelInteraction": [
+      {
+        "title": "Introduction and open question",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Hello, I am Dr Shah, one of the emergency doctors. Can you confirm your name and date of birth?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Tom Walker, 9th March 2002."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Could you tell me what happened today, in your own words?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I remember feeling odd, then waking on the floor. My tongue is sore and I am wet."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Thank you. Is there anything else?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "My head aches and I am achy all over."
+          }
+        ]
+      },
+      {
+        "title": "Witness account",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Anna, you saw it. Can you describe what happened from the start?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Colleague",
+            "text": "He went stiff, then jerked all over for about two minutes. His lips went blue and he did not respond. He bit his tongue."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "How long was he confused afterwards? Did he injure himself when he fell?"
+          },
+          {
+            "kind": "line",
+            "role": "witness",
+            "speaker": "Colleague",
+            "text": "About twenty minutes. He did not hit his head hard."
+          }
+        ]
+      },
+      {
+        "title": "Before, triggers and mimics",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Tom, what did you feel just before? Any sweating, dizziness or palpitations on standing?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "A rising feeling in my stomach and a strange smell. No palpitations."
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any head injury, fever, drugs or alcohol, and how did you sleep?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "Three hours of sleep, and I drank a lot last night."
+          }
+        ]
+      },
+      {
+        "title": "Past, drugs and family",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Any earlier episodes, jerks or blank spells? Medical conditions, medicines, allergies, or family history of epilepsy?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "None of those."
+          }
+        ]
+      },
+      {
+        "title": "Concerns and summary",
+        "lines": [
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Do you drive? What worries you most?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "I drive to work. Do I have epilepsy? Will it happen again?"
+          },
+          {
+            "kind": "line",
+            "role": "doctor",
+            "speaker": "Doctor",
+            "text": "Those are fair questions. One seizure does not always mean epilepsy, and a specialist clinic will assess you. To summarise, you had a witnessed generalised seizure lasting two minutes, with a warning sensation, tongue biting and twenty minutes of confusion, after poor sleep and heavy drinking, and your glucose is normal. I will arrange bloods and a heart tracing, refer you urgently to the first seizure clinic, and go through safety advice, including driving. Any questions?"
+          },
+          {
+            "kind": "line",
+            "role": "patient",
+            "speaker": "Patient",
+            "text": "No. Thanks."
+          }
+        ]
+      }
+    ],
+    "examinerExpectations": [
+      {
+        "t": "table",
+        "head": [
+          "Task",
+          "Expected in this station"
+        ],
+        "rows": [
+          [
+            "Do",
+            "Introduce yourself, check name and date of birth, start with an open question, listen, signpost, summarise and state a plan."
+          ],
+          [
+            "Find",
+            "Witnessed two-minute generalised tonic-clonic seizure with aura (rising feeling, smell), lateral tongue bite, incontinence, 20 minutes of confusion, sleep deprivation and alcohol, no previous episodes, glucose normal."
+          ],
+          [
+            "Ask",
+            "Witness account, aura, duration, tongue bite, incontinence, recovery, head injury, fever, alcohol and drugs, sleep, previous episodes, family history, driving, work."
+          ],
+          [
+            "Manage",
+            "Say aloud: ABCDE, glucose, bloods, ECG, consider CT head, first seizure clinic referral, written safety and driving advice, no routine antiepileptic from the ED."
+          ],
+          [
+            "React",
+            "Acknowledge fear, stay calm, do not falsely reassure, say you would ask the senior when unsure."
+          ]
+        ]
+      }
+    ],
+    "ifThisHappens": [
+      {
+        "t": "table",
+        "head": [
+          "Situation",
+          "Good response"
+        ],
+        "rows": [
+          [
+            "Patient seizes again",
+            "Protect from injury, time it, airway and oxygen, call for help, give a first-line benzodiazepine if beyond five minutes per protocol."
+          ],
+          [
+            "Patient is tearful about driving",
+            "Acknowledge the loss of independence, give clear written advice, explain the specialist will review."
+          ],
+          [
+            "Witness is distressed",
+            "Thank her, reassure that she acted correctly, give simple seizure first aid advice."
+          ]
+        ]
+      }
+    ],
+    "plainLanguage": [
+      {
+        "t": "table",
+        "head": [
+          "Medical term",
+          "Say instead"
+        ],
+        "rows": [
+          [
+            "Seizure or fit",
+            "A sudden burst of abnormal electrical activity in the brain"
+          ],
+          [
+            "Tonic-clonic",
+            "Stiffening followed by jerking"
+          ],
+          [
+            "Aura",
+            "A warning feeling before it starts"
+          ],
+          [
+            "Post-ictal",
+            "The confused, tired phase after a fit"
+          ],
+          [
+            "Epilepsy",
+            "A tendency to have repeated seizures"
+          ],
+          [
+            "EEG",
+            "A painless test that records electrical activity of the brain"
+          ]
+        ]
+      }
+    ],
+    "patientQuestions": [
+      {
+        "t": "table",
+        "head": [
+          "Question",
+          "Model reply"
+        ],
+        "rows": [
+          [
+            "Do I have epilepsy?",
+            "\"One seizure does not always mean epilepsy. The specialist clinic will assess you and decide.\""
+          ],
+          [
+            "Can I drive?",
+            "\"Not for now. You must not drive and need to tell the DVLA. The clinic will advise when it is safe.\""
+          ],
+          [
+            "Will it happen again?",
+            "\"It might. Avoiding sleep loss and heavy alcohol helps, and the clinic will talk about your risk.\""
+          ],
+          [
+            "Do I need tablets?",
+            "\"Not usually after a first seizure. The specialist will decide after assessment.\""
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Tips: acknowledge the feeling first, short sentences, check understanding, no false reassurance."
+      }
+    ],
+    "examinerQuestions": [
+      {
+        "question": "What are your immediate actions and investigations?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "ABCDE and glucose (done).",
+              "Bloods including electrolytes, calcium and magnesium, and ECG to exclude cardiac syncope.",
+              "Pregnancy test where relevant.",
+              "CT head if head injury, persistent deficit or other red flags."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do you tell seizure from syncope?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Seizure: aura, longer tonic-clonic movements, lateral tongue bite, incontinence, prolonged confusion, slow recovery.",
+              "Syncope: prodrome (sweating, tunnel vision), triggers such as standing, brief jerks, rapid recovery, pallor."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What advice do you give at discharge?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Do not drive and tell the DVLA.",
+              "Avoid heights, swimming alone and baths; shower instead.",
+              "Avoid heavy alcohol and sleep loss.",
+              "Urgent first seizure clinic referral. Antiepileptic drugs are not routinely started from the ED after a first unprovoked seizure.",
+              "Give written advice and seizure first aid guidance to those at home."
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What are common provoked causes?",
+        "answer": [
+          {
+            "t": "ul",
+            "items": [
+              "Hypoglycaemia, alcohol intoxication or withdrawal, drugs.",
+              "Electrolyte disturbance, infection (meningitis, encephalitis), head injury, stroke, eclampsia."
+            ]
+          }
+        ]
+      }
+    ],
+    "examinerQuestionPrompts": [
+      {
+        "t": "ol",
+        "items": [
+          "What are your immediate actions and investigations?",
+          "How do you tell seizure from syncope?",
+          "What advice do you give at discharge?",
+          "What are common provoked causes?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Model answers are in Learning mode.",
+        "muted": true
+      }
+    ],
+    "examinerAnswerTips": [],
+    "redFlags": [
+      {
+        "t": "ul",
+        "items": [
+          "Missing the witness account or not separating seizure from syncope.",
+          "Not checking glucose.",
+          "No driving or safety advice, or no follow-up referral.",
+          "No summary or plan, or jargon without explanation."
+        ]
+      }
+    ],
+    "globalRatingGuide": [],
+    "commonErrors": [],
+    "teachingPoints": [
+      {
+        "t": "ul",
+        "items": [
+          "A witness account is the most useful part of a first seizure history.",
+          "Check glucose and look for provoked causes.",
+          "Always give driving and safety advice.",
+          "Do not routinely start antiepileptic drugs from the ED after a first unprovoked seizure."
+        ]
+      }
+    ],
+    "resources": []
+  }
+}

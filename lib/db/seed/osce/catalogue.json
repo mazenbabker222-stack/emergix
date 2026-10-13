@@ -1,0 +1,318 @@
+{
+  "specialty": {
+    "slug": "neurology",
+    "name": "Neurology"
+  },
+  "groups": [
+    {
+      "slug": "stroke-and-vascular",
+      "name": "Stroke and vascular",
+      "position": 0,
+      "topics": [
+        {
+          "title": "Stroke and TIA",
+          "slug": "stroke-and-tia",
+          "ready": true
+        },
+        {
+          "title": "Subarachnoid haemorrhage",
+          "slug": "subarachnoid-haemorrhage",
+          "ready": true
+        },
+        {
+          "title": "Intracerebral haemorrhage",
+          "slug": "intracerebral-haemorrhage",
+          "ready": false
+        },
+        {
+          "title": "Cerebral venous sinus thrombosis",
+          "slug": "cerebral-venous-sinus-thrombosis",
+          "ready": false
+        },
+        {
+          "title": "Carotid and vertebral artery dissection",
+          "slug": "carotid-and-vertebral-artery-dissection",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "headache",
+      "name": "Headache",
+      "position": 1,
+      "topics": [
+        {
+          "title": "Thunderclap headache",
+          "slug": "thunderclap-headache",
+          "ready": false
+        },
+        {
+          "title": "Migraine and cluster headache",
+          "slug": "migraine-and-cluster-headache",
+          "ready": false
+        },
+        {
+          "title": "Giant cell arteritis",
+          "slug": "giant-cell-arteritis",
+          "ready": false
+        },
+        {
+          "title": "Idiopathic intracranial hypertension",
+          "slug": "idiopathic-intracranial-hypertension",
+          "ready": false
+        },
+        {
+          "title": "Tension headache and red flags",
+          "slug": "tension-headache-and-red-flags",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "seizures",
+      "name": "Seizures",
+      "position": 2,
+      "topics": [
+        {
+          "title": "First seizure",
+          "slug": "first-seizure",
+          "ready": true
+        },
+        {
+          "title": "Status epilepticus",
+          "slug": "status-epilepticus",
+          "ready": false
+        },
+        {
+          "title": "Febrile seizure",
+          "slug": "febrile-seizure",
+          "ready": false
+        },
+        {
+          "title": "Non-epileptic attacks",
+          "slug": "non-epileptic-attacks",
+          "ready": false
+        },
+        {
+          "title": "Eclampsia",
+          "slug": "eclampsia",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "cns-infection",
+      "name": "CNS infection",
+      "position": 3,
+      "topics": [
+        {
+          "title": "Meningitis",
+          "slug": "meningitis",
+          "ready": true
+        },
+        {
+          "title": "Encephalitis",
+          "slug": "encephalitis",
+          "ready": false
+        },
+        {
+          "title": "Brain abscess",
+          "slug": "brain-abscess",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "collapse-and-altered-consciousness",
+      "name": "Collapse and altered consciousness",
+      "position": 4,
+      "topics": [
+        {
+          "title": "Syncope versus seizure",
+          "slug": "syncope-versus-seizure",
+          "ready": false
+        },
+        {
+          "title": "Coma and reduced GCS",
+          "slug": "coma-and-reduced-gcs",
+          "ready": false
+        },
+        {
+          "title": "Delirium",
+          "slug": "delirium",
+          "ready": false
+        },
+        {
+          "title": "Wernicke’s encephalopathy",
+          "slug": "wernickes-encephalopathy",
+          "ready": false
+        },
+        {
+          "title": "Hypoglycaemia as a mimic",
+          "slug": "hypoglycaemia-as-a-mimic",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "weakness-and-spinal",
+      "name": "Weakness and spinal",
+      "position": 5,
+      "topics": [
+        {
+          "title": "Cord compression",
+          "slug": "cord-compression",
+          "ready": false
+        },
+        {
+          "title": "Cauda equina syndrome",
+          "slug": "cauda-equina",
+          "ready": true
+        },
+        {
+          "title": "Guillain-Barré syndrome",
+          "slug": "guillain-barre-syndrome",
+          "ready": false
+        },
+        {
+          "title": "Myasthenia gravis crisis",
+          "slug": "myasthenia-gravis-crisis",
+          "ready": false
+        },
+        {
+          "title": "Multiple sclerosis relapse",
+          "slug": "multiple-sclerosis-relapse",
+          "ready": false
+        },
+        {
+          "title": "Bell’s palsy",
+          "slug": "bells-palsy",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "dizziness",
+      "name": "Dizziness",
+      "position": 6,
+      "topics": [
+        {
+          "title": "BPPV",
+          "slug": "bppv",
+          "ready": false
+        },
+        {
+          "title": "Vestibular neuritis",
+          "slug": "vestibular-neuritis",
+          "ready": false
+        },
+        {
+          "title": "Posterior circulation stroke (HINTS)",
+          "slug": "posterior-circulation-stroke-hints",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "head-injury-and-raised-pressure",
+      "name": "Head injury and raised pressure",
+      "position": 7,
+      "topics": [
+        {
+          "title": "Head injury (GCS, CT head criteria)",
+          "slug": "head-injury-gcs-ct-head-criteria",
+          "ready": false
+        },
+        {
+          "title": "Raised intracranial pressure",
+          "slug": "raised-intracranial-pressure",
+          "ready": false
+        },
+        {
+          "title": "Subdural and extradural haematoma",
+          "slug": "subdural-and-extradural-haematoma",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "slug": "skills-often-examined",
+      "name": "Skills often examined",
+      "position": 8,
+      "topics": [
+        {
+          "title": "Neurological examination (cranial nerves, limbs, gait)",
+          "slug": "neurological-examination-cranial-nerves-limbs-gait",
+          "ready": false
+        },
+        {
+          "title": "GCS and pupils",
+          "slug": "gcs-and-pupils",
+          "ready": false
+        },
+        {
+          "title": "Fundoscopy",
+          "slug": "fundoscopy",
+          "ready": false
+        },
+        {
+          "title": "Lumbar puncture",
+          "slug": "lumbar-puncture",
+          "ready": false
+        },
+        {
+          "title": "Reading a CT head",
+          "slug": "reading-a-ct-head",
+          "ready": false
+        }
+      ]
+    }
+  ],
+  "ready": [
+    {
+      "slug": "stroke-and-tia",
+      "title": "Stroke and TIA",
+      "summary": "Focused history taking, examiner guidance and timed practice.",
+      "image": "/brand/t1.jpg",
+      "category": "Stroke & vascular",
+      "difficulty": "core",
+      "topicGroup": "Stroke and vascular"
+    },
+    {
+      "slug": "subarachnoid-haemorrhage",
+      "title": "Subarachnoid haemorrhage",
+      "summary": "Explore a sudden severe headache and examiner expectations.",
+      "image": "/brand/t2.jpg",
+      "category": "Stroke & vascular",
+      "difficulty": "core",
+      "topicGroup": "Stroke and vascular"
+    },
+    {
+      "slug": "cauda-equina",
+      "title": "Cauda equina syndrome",
+      "summary": "A sensitive red-flag history with a clear emergency plan.",
+      "image": "/brand/t3.jpg",
+      "category": "Weakness & spinal",
+      "difficulty": "advanced",
+      "topicGroup": "Weakness and spinal"
+    },
+    {
+      "slug": "first-seizure",
+      "title": "First seizure",
+      "summary": "Explore a first seizure, witness history and immediate priorities.",
+      "image": "/brand/t4.jpg",
+      "category": "Seizures",
+      "difficulty": "foundation",
+      "topicGroup": "Seizures"
+    },
+    {
+      "slug": "meningitis",
+      "title": "Meningitis",
+      "summary": "Practise a focused history in a time-critical presentation.",
+      "image": "/brand/t5.jpg",
+      "category": "CNS infection",
+      "difficulty": "core",
+      "topicGroup": "CNS infection"
+    }
+  ]
+}
